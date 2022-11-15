@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2641D764291D27F50073AF6C /* ColorWheelSchemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2641D763291D27F50073AF6C /* ColorWheelSchemeViewController.swift */; };
+		2641D766291D2BC80073AF6C /* TextContrastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2641D765291D2BC80073AF6C /* TextContrastViewController.swift */; };
+		26E7C39A2920CB920068D56C /* ColorSchemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E7C3992920CB920068D56C /* ColorSchemeView.swift */; };
+		8A145A99291CC9DA001DA76C /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A145A98291CC9DA001DA76C /* MeViewController.swift */; };
+		8A145A9B291CED8B001DA76C /* PickerRegionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A145A9A291CED8B001DA76C /* PickerRegionView.swift */; };
+		8A5FAA6F291DE4E400FDFF76 /* ColorWheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5FAA6E291DE4E400FDFF76 /* ColorWheelView.swift */; };
+		8A5FAA71291E37C300FDFF76 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5FAA70291E37C300FDFF76 /* MainTabBarController.swift */; };
+		8A5FAA73291E3D8E00FDFF76 /* ColorWheelBrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5FAA72291E3D8E00FDFF76 /* ColorWheelBrightnessView.swift */; };
+		8A6A43A4291A374300603EB1 /* DominantColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A43A3291A374300603EB1 /* DominantColor.cpp */; };
+		8AAC9C462918D9CF004680B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC9C452918D9CF004680B6 /* AppDelegate.swift */; };
+		8AAC9C482918D9CF004680B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC9C472918D9CF004680B6 /* SceneDelegate.swift */; };
+		8AAC9C4A2918D9CF004680B6 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC9C492918D9CF004680B6 /* CreateViewController.swift */; };
+		8AAC9C4D2918D9CF004680B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AAC9C4B2918D9CF004680B6 /* Main.storyboard */; };
+		8AAC9C4F2918D9D0004680B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AAC9C4E2918D9D0004680B6 /* Assets.xcassets */; };
+		8AAC9C522918D9D0004680B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AAC9C502918D9D0004680B6 /* LaunchScreen.storyboard */; };
+		8AAC9C5A2918DD84004680B6 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC9C592918DD84004680B6 /* ExploreViewController.swift */; };
+		8AAC9C5C2918F056004680B6 /* PhotoColorSchemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC9C5B2918F056004680B6 /* PhotoColorSchemeViewController.swift */; };
+		8AAC9C5E2918FB13004680B6 /* ColorSchemeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC9C5D2918FB13004680B6 /* ColorSchemeGenerator.swift */; };
+		8ADE9C32291B4D24005B93B1 /* PhotoColorSchemeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE9C31291B4D24005B93B1 /* PhotoColorSchemeCellView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2634C12F291A764A00ED4D62 /* dkm_parallel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = dkm_parallel.hpp; sourceTree = "<group>"; };
+		2634C130291A764A00ED4D62 /* dkm_utils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = dkm_utils.hpp; sourceTree = "<group>"; };
+		2634C131291A764A00ED4D62 /* dkm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = dkm.hpp; sourceTree = "<group>"; };
+		2641D763291D27F50073AF6C /* ColorWheelSchemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWheelSchemeViewController.swift; sourceTree = "<group>"; };
+		2641D765291D2BC80073AF6C /* TextContrastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextContrastViewController.swift; sourceTree = "<group>"; };
+		26E7C3992920CB920068D56C /* ColorSchemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSchemeView.swift; sourceTree = "<group>"; };
+		8A145A98291CC9DA001DA76C /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		8A145A9A291CED8B001DA76C /* PickerRegionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerRegionView.swift; sourceTree = "<group>"; };
+		8A5FAA6E291DE4E400FDFF76 /* ColorWheelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWheelView.swift; sourceTree = "<group>"; };
+		8A5FAA70291E37C300FDFF76 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		8A5FAA72291E3D8E00FDFF76 /* ColorWheelBrightnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWheelBrightnessView.swift; sourceTree = "<group>"; };
+		8A6A43A2291A374300603EB1 /* DominantColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DominantColor.h; sourceTree = "<group>"; };
+		8A6A43A3291A374300603EB1 /* DominantColor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DominantColor.cpp; sourceTree = "<group>"; };
+		8AAC9C422918D9CF004680B6 /* Alice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AAC9C452918D9CF004680B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8AAC9C472918D9CF004680B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8AAC9C492918D9CF004680B6 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		8AAC9C4C2918D9CF004680B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8AAC9C4E2918D9D0004680B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AAC9C512918D9D0004680B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8AAC9C532918D9D0004680B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AAC9C592918DD84004680B6 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		8AAC9C5B2918F056004680B6 /* PhotoColorSchemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoColorSchemeViewController.swift; sourceTree = "<group>"; };
+		8AAC9C5D2918FB13004680B6 /* ColorSchemeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSchemeGenerator.swift; sourceTree = "<group>"; };
+		8AAC9C5F2918FF64004680B6 /* Alice-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Alice-Bridging-Header.h"; sourceTree = "<group>"; };
+		8ADE9C31291B4D24005B93B1 /* PhotoColorSchemeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoColorSchemeCellView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8AAC9C3F2918D9CF004680B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26E7C3952920BBC50068D56C /* PhotoColorScheme */ = {
+			isa = PBXGroup;
+			children = (
+				8AAC9C5B2918F056004680B6 /* PhotoColorSchemeViewController.swift */,
+				8ADE9C31291B4D24005B93B1 /* PhotoColorSchemeCellView.swift */,
+				26E7C3992920CB920068D56C /* ColorSchemeView.swift */,
+				8A145A9A291CED8B001DA76C /* PickerRegionView.swift */,
+				8AAC9C5D2918FB13004680B6 /* ColorSchemeGenerator.swift */,
+			);
+			path = PhotoColorScheme;
+			sourceTree = "<group>";
+		};
+		26E7C3962920BBD80068D56C /* ColorWheelScheme */ = {
+			isa = PBXGroup;
+			children = (
+				2641D763291D27F50073AF6C /* ColorWheelSchemeViewController.swift */,
+				8A5FAA6E291DE4E400FDFF76 /* ColorWheelView.swift */,
+				8A5FAA72291E3D8E00FDFF76 /* ColorWheelBrightnessView.swift */,
+			);
+			path = ColorWheelScheme;
+			sourceTree = "<group>";
+		};
+		26E7C3982920BC0E0068D56C /* TextContrast */ = {
+			isa = PBXGroup;
+			children = (
+				2641D765291D2BC80073AF6C /* TextContrastViewController.swift */,
+			);
+			path = TextContrast;
+			sourceTree = "<group>";
+		};
+		8AAC9C392918D9CF004680B6 = {
+			isa = PBXGroup;
+			children = (
+				8AAC9C442918D9CF004680B6 /* Alice */,
+				8AAC9C432918D9CF004680B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8AAC9C432918D9CF004680B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8AAC9C422918D9CF004680B6 /* Alice.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8AAC9C442918D9CF004680B6 /* Alice */ = {
+			isa = PBXGroup;
+			children = (
+				8AAC9C452918D9CF004680B6 /* AppDelegate.swift */,
+				8AAC9C472918D9CF004680B6 /* SceneDelegate.swift */,
+				8A5FAA70291E37C300FDFF76 /* MainTabBarController.swift */,
+				8AAC9C492918D9CF004680B6 /* CreateViewController.swift */,
+				8AAC9C592918DD84004680B6 /* ExploreViewController.swift */,
+				8A145A98291CC9DA001DA76C /* MeViewController.swift */,
+				26E7C3982920BC0E0068D56C /* TextContrast */,
+				26E7C3952920BBC50068D56C /* PhotoColorScheme */,
+				26E7C3962920BBD80068D56C /* ColorWheelScheme */,
+				8A6A43A2291A374300603EB1 /* DominantColor.h */,
+				8A6A43A3291A374300603EB1 /* DominantColor.cpp */,
+				2634C12F291A764A00ED4D62 /* dkm_parallel.hpp */,
+				2634C130291A764A00ED4D62 /* dkm_utils.hpp */,
+				2634C131291A764A00ED4D62 /* dkm.hpp */,
+				8AAC9C5F2918FF64004680B6 /* Alice-Bridging-Header.h */,
+				8AAC9C4B2918D9CF004680B6 /* Main.storyboard */,
+				8AAC9C4E2918D9D0004680B6 /* Assets.xcassets */,
+				8AAC9C502918D9D0004680B6 /* LaunchScreen.storyboard */,
+				8AAC9C532918D9D0004680B6 /* Info.plist */,
+			);
+			path = Alice;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8AAC9C412918D9CF004680B6 /* Alice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AAC9C562918D9D0004680B6 /* Build configuration list for PBXNativeTarget "Alice" */;
+			buildPhases = (
+				8AAC9C3E2918D9CF004680B6 /* Sources */,
+				8AAC9C3F2918D9CF004680B6 /* Frameworks */,
+				8AAC9C402918D9CF004680B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alice;
+			productName = Alice;
+			productReference = 8AAC9C422918D9CF004680B6 /* Alice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8AAC9C3A2918D9CF004680B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					8AAC9C412918D9CF004680B6 = {
+						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
+					};
+				};
+			};
+			buildConfigurationList = 8AAC9C3D2918D9CF004680B6 /* Build configuration list for PBXProject "Alice" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8AAC9C392918D9CF004680B6;
+			productRefGroup = 8AAC9C432918D9CF004680B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8AAC9C412918D9CF004680B6 /* Alice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8AAC9C402918D9CF004680B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AAC9C522918D9D0004680B6 /* LaunchScreen.storyboard in Resources */,
+				8AAC9C4F2918D9D0004680B6 /* Assets.xcassets in Resources */,
+				8AAC9C4D2918D9CF004680B6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8AAC9C3E2918D9CF004680B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A5FAA73291E3D8E00FDFF76 /* ColorWheelBrightnessView.swift in Sources */,
+				8A5FAA6F291DE4E400FDFF76 /* ColorWheelView.swift in Sources */,
+				8A145A9B291CED8B001DA76C /* PickerRegionView.swift in Sources */,
+				8A145A99291CC9DA001DA76C /* MeViewController.swift in Sources */,
+				2641D766291D2BC80073AF6C /* TextContrastViewController.swift in Sources */,
+				8ADE9C32291B4D24005B93B1 /* PhotoColorSchemeCellView.swift in Sources */,
+				8A6A43A4291A374300603EB1 /* DominantColor.cpp in Sources */,
+				8AAC9C4A2918D9CF004680B6 /* CreateViewController.swift in Sources */,
+				8AAC9C462918D9CF004680B6 /* AppDelegate.swift in Sources */,
+				8AAC9C5C2918F056004680B6 /* PhotoColorSchemeViewController.swift in Sources */,
+				8AAC9C5A2918DD84004680B6 /* ExploreViewController.swift in Sources */,
+				8A5FAA71291E37C300FDFF76 /* MainTabBarController.swift in Sources */,
+				8AAC9C482918D9CF004680B6 /* SceneDelegate.swift in Sources */,
+				8AAC9C5E2918FB13004680B6 /* ColorSchemeGenerator.swift in Sources */,
+				2641D764291D27F50073AF6C /* ColorWheelSchemeViewController.swift in Sources */,
+				26E7C39A2920CB920068D56C /* ColorSchemeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8AAC9C4B2918D9CF004680B6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AAC9C4C2918D9CF004680B6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8AAC9C502918D9D0004680B6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AAC9C512918D9D0004680B6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8AAC9C542918D9D0004680B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8AAC9C552918D9D0004680B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8AAC9C572918D9D0004680B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N77YA486UJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Alice/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lazycatdesign.Alice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Alice/Alice-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8AAC9C582918D9D0004680B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N77YA486UJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Alice/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lazycatdesign.Alice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Alice/Alice-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8AAC9C3D2918D9CF004680B6 /* Build configuration list for PBXProject "Alice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AAC9C542918D9D0004680B6 /* Debug */,
+				8AAC9C552918D9D0004680B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AAC9C562918D9D0004680B6 /* Build configuration list for PBXNativeTarget "Alice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AAC9C572918D9D0004680B6 /* Debug */,
+				8AAC9C582918D9D0004680B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8AAC9C3A2918D9CF004680B6 /* Project object */;
+}
