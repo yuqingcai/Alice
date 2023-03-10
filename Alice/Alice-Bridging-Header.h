@@ -3,3 +3,5 @@
 //
 
 #include "DominantColor.h"
+#include "sqlite3.h"
+#include "cJSON.h"

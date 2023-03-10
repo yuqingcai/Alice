@@ -13,27 +13,30 @@
 extern "C" {
 #endif
 
-struct RgbawColor {
-    unsigned char blue;
-    unsigned char green;
-    unsigned char red;
-    unsigned char alpha;
-    unsigned int weight;
+struct RGBAWColor {
+    int blue;
+    int green;
+    int red;
+    int alpha;
+    int weight;
 };
 
 struct DominantColor {
     unsigned int count;
-    struct RgbawColor* colors;
+    struct RGBAWColor* colors;
 };
 
-struct DominantColor*
-DominantColorFromBitmapBuffer(const unsigned char *ptr,
-                              unsigned int bytesPerRow,
-                              unsigned int colorCount,
-                              unsigned int offsetX,
-                              unsigned int offsetY,
-                              unsigned int sampleWidth,
-                              unsigned int sampleHeight);
+struct DominantColor* DominantColorFromBitmapBuffer(const unsigned char *ptr,
+                                                    unsigned int bytesPerRow,
+                                                    unsigned int colorCount,
+                                                    unsigned int offsetX,
+                                                    unsigned int offsetY,
+                                                    unsigned int sampleWidth,
+                                                    unsigned int sampleHeight,
+                                                    unsigned int redOrder,
+                                                    unsigned int greenOrder,
+                                                    unsigned int blueOrder,
+                                                    unsigned int alphaOrder);
 void FreeDominantColor(struct DominantColor* dominant);
 
 #ifdef __cplusplus
