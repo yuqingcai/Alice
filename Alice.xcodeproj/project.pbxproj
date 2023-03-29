@@ -12,14 +12,20 @@
 		260665212928834F0020938F /* SampleSchemeOperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260665202928834F0020938F /* SampleSchemeOperationViewController.swift */; };
 		2641D764291D27F50073AF6C /* ColorComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2641D763291D27F50073AF6C /* ColorComposeViewController.swift */; };
 		2662D11C294C6672003C0965 /* LocalLibraryItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2662D11B294C6672003C0965 /* LocalLibraryItemViewCell.swift */; };
+		2668B2C129D06974000C49F5 /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2668B2C029D06974000C49F5 /* NetworkReachability.swift */; };
 		26E7C39A2920CB920068D56C /* ColorSchemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E7C3992920CB920068D56C /* ColorSchemeView.swift */; };
-		8A06F71B295D647E00F8FEB4 /* ColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A06F71A295D647E00F8FEB4 /* ColorTableViewCell.swift */; };
+		8A06F71B295D647E00F8FEB4 /* SchemeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A06F71A295D647E00F8FEB4 /* SchemeTableViewCell.swift */; };
 		8A0A314829A31DA1002AD223 /* International.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0A314729A31DA1002AD223 /* International.swift */; };
 		8A145A99291CC9DA001DA76C /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A145A98291CC9DA001DA76C /* MeViewController.swift */; };
 		8A145A9B291CED8B001DA76C /* SampleRegionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A145A9A291CED8B001DA76C /* SampleRegionView.swift */; };
+		8A15B78329C2AE1900426233 /* StorePaymentProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A15B78229C2AE1900426233 /* StorePaymentProductTableViewCell.swift */; };
+		8A15B78529C2BA7B00426233 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A15B78429C2BA7B00426233 /* ProductView.swift */; };
 		8A19DD5B295990B00058CE39 /* LocalLibraryItemDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A19DD5A295990B00058CE39 /* LocalLibraryItemDetailViewCell.swift */; };
+		8A1E612D29D11FA700EB81E6 /* NetworkNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1E612C29D11FA700EB81E6 /* NetworkNotificationViewController.swift */; };
 		8A274386295A85450035BEA7 /* LocalLibraryGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A274385295A85450035BEA7 /* LocalLibraryGroupViewController.swift */; };
 		8A41E6C12952B0D50033B865 /* cJSON.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A41E6C02952B0D50033B865 /* cJSON.c */; };
+		8A4B14C929C06A4E0039FBCC /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4B14C829C06A4E0039FBCC /* PrivacyPolicyViewController.swift */; };
+		8A4B14CB29C06A9A0039FBCC /* TermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4B14CA29C06A9A0039FBCC /* TermsAndConditionsViewController.swift */; };
 		8A4F084E29B57EA9001EABB9 /* PhotoPortraitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4F084D29B57EA9001EABB9 /* PhotoPortraitView.swift */; };
 		8A4F085029B57EEE001EABB9 /* ColorWheelPortraitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4F084F29B57EEE001EABB9 /* ColorWheelPortraitView.swift */; };
 		8A4F085329B5B4F7001EABB9 /* Analogous.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4F085229B5B4F7001EABB9 /* Analogous.swift */; };
@@ -36,7 +42,8 @@
 		8A5E73452966BAFD00994824 /* LinkPresentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A5E73442966BAFD00994824 /* LinkPresentation.framework */; };
 		8A5FAA6F291DE4E400FDFF76 /* ColorWheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5FAA6E291DE4E400FDFF76 /* ColorWheelView.swift */; };
 		8A5FAA71291E37C300FDFF76 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5FAA70291E37C300FDFF76 /* TabBarController.swift */; };
-		8A6112852967A5830038D322 /* SchemeImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6112842967A5830038D322 /* SchemeImageViewController.swift */; };
+		8A606C0929C008FC00844B4F /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A606C0829C008FC00844B4F /* AppStore.swift */; };
+		8A6112852967A5830038D322 /* SchemeDiagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6112842967A5830038D322 /* SchemeDiagramViewController.swift */; };
 		8A68E249299DB93E00692BFE /* Alice+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A68E248299DB93E00692BFE /* Alice+UIView.swift */; };
 		8A68E24B299DB96200692BFE /* Alice+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A68E24A299DB96200692BFE /* Alice+UIImage.swift */; };
 		8A68E24D299DB98700692BFE /* Alice+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A68E24C299DB98700692BFE /* Alice+UIColor.swift */; };
@@ -50,22 +57,23 @@
 		8AA6EA1C294FF95E00E6DC5D /* Snapshoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6EA1B294FF95E00E6DC5D /* Snapshoot.swift */; };
 		8AAC9C462918D9CF004680B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC9C452918D9CF004680B6 /* AppDelegate.swift */; };
 		8AAC9C482918D9CF004680B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC9C472918D9CF004680B6 /* SceneDelegate.swift */; };
-		8AAC9C4A2918D9CF004680B6 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC9C492918D9CF004680B6 /* CreateViewController.swift */; };
+		8AAC9C4A2918D9CF004680B6 /* InspirationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC9C492918D9CF004680B6 /* InspirationViewController.swift */; };
 		8AAC9C4D2918D9CF004680B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AAC9C4B2918D9CF004680B6 /* Main.storyboard */; };
 		8AAC9C4F2918D9D0004680B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AAC9C4E2918D9D0004680B6 /* Assets.xcassets */; };
 		8AAC9C522918D9D0004680B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AAC9C502918D9D0004680B6 /* LaunchScreen.storyboard */; };
-		8AAC9C5A2918DD84004680B6 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC9C592918DD84004680B6 /* ExploreViewController.swift */; };
+		8AAC9C5A2918DD84004680B6 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC9C592918DD84004680B6 /* DiscoverViewController.swift */; };
 		8AAC9C5C2918F056004680B6 /* ColorSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC9C5B2918F056004680B6 /* ColorSampleViewController.swift */; };
 		8AAC9C5E2918FB13004680B6 /* ColorSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC9C5D2918FB13004680B6 /* ColorSampler.swift */; };
+		8AB35AAE29D134DF0064C11B /* icon-app-launch@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AB35AAD29D134DF0064C11B /* icon-app-launch@3x.png */; };
+		8AB35AB229D138460064C11B /* Illustration.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AB35AB129D138460064C11B /* Illustration.xcassets */; };
+		8AB35AB429D17BD50064C11B /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB35AB329D17BD50064C11B /* Settings.swift */; };
 		8AB3B95729655CDB00780538 /* ColorFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB3B95629655CDB00780538 /* ColorFunction.swift */; };
 		8ABB197D296D0D7900B46462 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABB197C296D0D7900B46462 /* NotificationView.swift */; };
 		8ABFBB3729557BE100C0D9A4 /* LocalLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABFBB3629557BE100C0D9A4 /* LocalLibraryViewController.swift */; };
 		8AC73A992992386F00BFF0C7 /* SubscribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC73A982992386F00BFF0C7 /* SubscribeViewController.swift */; };
 		8AC73A9B299238C000BFF0C7 /* ManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC73A9A299238C000BFF0C7 /* ManualViewController.swift */; };
 		8AC73A9D2992390900BFF0C7 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC73A9C2992390900BFF0C7 /* AboutViewController.swift */; };
-		8ACA187229BB012B0035F872 /* icon-app-launch@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ACA187129BB012B0035F872 /* icon-app-launch@3x.png */; };
-		8ACA187529BB028B0035F872 /* Samples in Resources */ = {isa = PBXBuildFile; fileRef = 8ACA187329BB028B0035F872 /* Samples */; };
-		8ACA187629BB028B0035F872 /* Icons in Resources */ = {isa = PBXBuildFile; fileRef = 8ACA187429BB028B0035F872 /* Icons */; };
+		8ACA187529BB028B0035F872 /* Sample in Resources */ = {isa = PBXBuildFile; fileRef = 8ACA187329BB028B0035F872 /* Sample */; };
 		8AD5E6B7292F61E200A6F1CA /* SchemeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5E6B6292F61E200A6F1CA /* SchemeTableViewController.swift */; };
 		8AFDB970297534EC00970C0B /* ColorComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFDB96F297534EC00970C0B /* ColorComposer.swift */; };
 /* End PBXBuildFile section */
@@ -79,16 +87,22 @@
 		2634C131291A764A00ED4D62 /* dkm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = dkm.hpp; sourceTree = "<group>"; };
 		2641D763291D27F50073AF6C /* ColorComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorComposeViewController.swift; sourceTree = "<group>"; };
 		2662D11B294C6672003C0965 /* LocalLibraryItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLibraryItemViewCell.swift; sourceTree = "<group>"; };
+		2668B2C029D06974000C49F5 /* NetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
 		26E7C3992920CB920068D56C /* ColorSchemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSchemeView.swift; sourceTree = "<group>"; };
-		8A06F71A295D647E00F8FEB4 /* ColorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTableViewCell.swift; sourceTree = "<group>"; };
+		8A06F71A295D647E00F8FEB4 /* SchemeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemeTableViewCell.swift; sourceTree = "<group>"; };
 		8A0A314729A31DA1002AD223 /* International.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = International.swift; sourceTree = "<group>"; };
 		8A145A98291CC9DA001DA76C /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		8A145A9A291CED8B001DA76C /* SampleRegionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleRegionView.swift; sourceTree = "<group>"; };
+		8A15B78229C2AE1900426233 /* StorePaymentProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorePaymentProductTableViewCell.swift; sourceTree = "<group>"; };
+		8A15B78429C2BA7B00426233 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 		8A19DD5A295990B00058CE39 /* LocalLibraryItemDetailViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalLibraryItemDetailViewCell.swift; sourceTree = "<group>"; };
+		8A1E612C29D11FA700EB81E6 /* NetworkNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkNotificationViewController.swift; sourceTree = "<group>"; };
 		8A274385295A85450035BEA7 /* LocalLibraryGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLibraryGroupViewController.swift; sourceTree = "<group>"; };
 		8A41E6BF2952B0D50033B865 /* cJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cJSON.h; sourceTree = "<group>"; };
 		8A41E6C02952B0D50033B865 /* cJSON.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cJSON.c; sourceTree = "<group>"; };
 		8A424BD2296FDF6F00BAF4F3 /* ZIPFoundation-development */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "ZIPFoundation-development"; path = "Alice/3tdParty/ZIPFoundation-development"; sourceTree = "<group>"; };
+		8A4B14C829C06A4E0039FBCC /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
+		8A4B14CA29C06A9A0039FBCC /* TermsAndConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewController.swift; sourceTree = "<group>"; };
 		8A4F084D29B57EA9001EABB9 /* PhotoPortraitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPortraitView.swift; sourceTree = "<group>"; };
 		8A4F084F29B57EEE001EABB9 /* ColorWheelPortraitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWheelPortraitView.swift; sourceTree = "<group>"; };
 		8A4F085229B5B4F7001EABB9 /* Analogous.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analogous.swift; sourceTree = "<group>"; };
@@ -103,34 +117,18 @@
 		8A5A707229A6F3110030F7FB /* ColorSchemeInfoSingleLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSchemeInfoSingleLineView.swift; sourceTree = "<group>"; };
 		8A5A709029A700D90030F7FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		8A5A70C729A70D9A0030F7FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		8A5A70C929A70DCE0030F7FB /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Main.strings"; sourceTree = "<group>"; };
-		8A5A70CA29A70DCE0030F7FB /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		8A5A70CD29A70DFE0030F7FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		8A5A70D029A70E790030F7FB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		8A5A70D129A70E790030F7FB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		8A5A70D329A70E810030F7FB /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
 		8A5A70D429A70E810030F7FB /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		8A5A70D629A70EA00030F7FB /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
-		8A5A70D729A70EA00030F7FB /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		8A5A70D929A70EB60030F7FB /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
-		8A5A70DA29A70EB60030F7FB /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		8A5A70DC29A70EC30030F7FB /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Main.strings; sourceTree = "<group>"; };
-		8A5A70DD29A70EC30030F7FB /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		8A5A70DF29A70ECD0030F7FB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
-		8A5A70E029A70ECD0030F7FB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		8A5A70E229A70EE00030F7FB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
-		8A5A70E329A70EE00030F7FB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		8A5A70E529A70EEB0030F7FB /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
-		8A5A70E629A70EEB0030F7FB /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		8A5A70E829A70EF40030F7FB /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
-		8A5A70E929A70EF40030F7FB /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		8A5A70EC29A761370030F7FB /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		8A5A70ED29A761390030F7FB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		8A5A70EE29A7613B0030F7FB /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		8A5E73442966BAFD00994824 /* LinkPresentation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LinkPresentation.framework; path = System/Library/Frameworks/LinkPresentation.framework; sourceTree = SDKROOT; };
 		8A5FAA6E291DE4E400FDFF76 /* ColorWheelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWheelView.swift; sourceTree = "<group>"; };
 		8A5FAA70291E37C300FDFF76 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		8A6112842967A5830038D322 /* SchemeImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemeImageViewController.swift; sourceTree = "<group>"; };
+		8A606C0829C008FC00844B4F /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		8A6112842967A5830038D322 /* SchemeDiagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemeDiagramViewController.swift; sourceTree = "<group>"; };
 		8A68E248299DB93E00692BFE /* Alice+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alice+UIView.swift"; sourceTree = "<group>"; };
 		8A68E24A299DB96200692BFE /* Alice+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alice+UIImage.swift"; sourceTree = "<group>"; };
 		8A68E24C299DB98700692BFE /* Alice+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alice+UIColor.swift"; sourceTree = "<group>"; };
@@ -145,24 +143,25 @@
 		8AAC9C422918D9CF004680B6 /* Alice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AAC9C452918D9CF004680B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AAC9C472918D9CF004680B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8AAC9C492918D9CF004680B6 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		8AAC9C492918D9CF004680B6 /* InspirationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationViewController.swift; sourceTree = "<group>"; };
 		8AAC9C4C2918D9CF004680B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8AAC9C4E2918D9D0004680B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AAC9C512918D9D0004680B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AAC9C532918D9D0004680B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8AAC9C592918DD84004680B6 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		8AAC9C592918DD84004680B6 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		8AAC9C5B2918F056004680B6 /* ColorSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSampleViewController.swift; sourceTree = "<group>"; };
 		8AAC9C5D2918FB13004680B6 /* ColorSampler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSampler.swift; sourceTree = "<group>"; };
 		8AAC9C5F2918FF64004680B6 /* Alice-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Alice-Bridging-Header.h"; sourceTree = "<group>"; };
+		8AB35AAD29D134DF0064C11B /* icon-app-launch@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-app-launch@3x.png"; path = "Resource/Icon/icon-app-launch@3x.png"; sourceTree = "<group>"; };
+		8AB35AB129D138460064C11B /* Illustration.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Illustration.xcassets; sourceTree = "<group>"; };
+		8AB35AB329D17BD50064C11B /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		8AB3B95629655CDB00780538 /* ColorFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFunction.swift; sourceTree = "<group>"; };
 		8ABB197C296D0D7900B46462 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		8ABFBB3629557BE100C0D9A4 /* LocalLibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLibraryViewController.swift; sourceTree = "<group>"; };
 		8AC73A982992386F00BFF0C7 /* SubscribeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeViewController.swift; sourceTree = "<group>"; };
 		8AC73A9A299238C000BFF0C7 /* ManualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualViewController.swift; sourceTree = "<group>"; };
 		8AC73A9C2992390900BFF0C7 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
-		8ACA187129BB012B0035F872 /* icon-app-launch@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-app-launch@3x.png"; path = "Resource/icons/icon-app-launch@3x.png"; sourceTree = "<group>"; };
-		8ACA187329BB028B0035F872 /* Samples */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Samples; path = Alice/Resource/Samples; sourceTree = "<group>"; };
-		8ACA187429BB028B0035F872 /* Icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Icons; path = Alice/Resource/Icons; sourceTree = "<group>"; };
+		8ACA187329BB028B0035F872 /* Sample */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Sample; path = Alice/Resource/Sample; sourceTree = "<group>"; };
 		8AD5E6B6292F61E200A6F1CA /* SchemeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemeTableViewController.swift; sourceTree = "<group>"; };
 		8AFDB96F297534EC00970C0B /* ColorComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorComposer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -256,6 +255,8 @@
 			isa = PBXGroup;
 			children = (
 				8AC73A982992386F00BFF0C7 /* SubscribeViewController.swift */,
+				8A15B78229C2AE1900426233 /* StorePaymentProductTableViewCell.swift */,
+				8A15B78429C2BA7B00426233 /* ProductView.swift */,
 			);
 			path = Subscribe;
 			sourceTree = "<group>";
@@ -272,6 +273,8 @@
 			isa = PBXGroup;
 			children = (
 				8AC73A9C2992390900BFF0C7 /* AboutViewController.swift */,
+				8A4B14C829C06A4E0039FBCC /* PrivacyPolicyViewController.swift */,
+				8A4B14CA29C06A9A0039FBCC /* TermsAndConditionsViewController.swift */,
 			);
 			path = About;
 			sourceTree = "<group>";
@@ -279,8 +282,7 @@
 		8AAC9C392918D9CF004680B6 = {
 			isa = PBXGroup;
 			children = (
-				8ACA187429BB028B0035F872 /* Icons */,
-				8ACA187329BB028B0035F872 /* Samples */,
+				8ACA187329BB028B0035F872 /* Sample */,
 				8A5A70C829A70D9A0030F7FB /* Localizable.strings */,
 				8A424BD1296FDF6F00BAF4F3 /* Packages */,
 				8AAC9C442918D9CF004680B6 /* Alice */,
@@ -300,25 +302,29 @@
 		8AAC9C442918D9CF004680B6 /* Alice */ = {
 			isa = PBXGroup;
 			children = (
-				8ACA187129BB012B0035F872 /* icon-app-launch@3x.png */,
+				8AB35AAD29D134DF0064C11B /* icon-app-launch@3x.png */,
 				8AAC9C452918D9CF004680B6 /* AppDelegate.swift */,
+				8AB35AB329D17BD50064C11B /* Settings.swift */,
+				8AAC9C472918D9CF004680B6 /* SceneDelegate.swift */,
+				2668B2C029D06974000C49F5 /* NetworkReachability.swift */,
+				8A1E612C29D11FA700EB81E6 /* NetworkNotificationViewController.swift */,
+				8A606C0829C008FC00844B4F /* AppStore.swift */,
 				8A0A314729A31DA1002AD223 /* International.swift */,
 				8A68E248299DB93E00692BFE /* Alice+UIView.swift */,
 				8A68E24A299DB96200692BFE /* Alice+UIImage.swift */,
 				8A68E24C299DB98700692BFE /* Alice+UIColor.swift */,
 				8A86DFF9297B6FF800329118 /* ColorSchemeGenerator.swift */,
-				8AAC9C472918D9CF004680B6 /* SceneDelegate.swift */,
 				8A5FAA70291E37C300FDFF76 /* TabBarController.swift */,
 				8A973299297912B700CF88C6 /* NavigationController.swift */,
-				8AAC9C492918D9CF004680B6 /* CreateViewController.swift */,
-				8AAC9C592918DD84004680B6 /* ExploreViewController.swift */,
+				8AAC9C492918D9CF004680B6 /* InspirationViewController.swift */,
+				8AAC9C592918DD84004680B6 /* DiscoverViewController.swift */,
 				8A145A98291CC9DA001DA76C /* MeViewController.swift */,
 				8ABB197C296D0D7900B46462 /* NotificationView.swift */,
 				8AB3B95629655CDB00780538 /* ColorFunction.swift */,
-				8A06F71A295D647E00F8FEB4 /* ColorTableViewCell.swift */,
-				8A5400ED295BE4F5000A5934 /* PortraitViewController.swift */,
+				8A06F71A295D647E00F8FEB4 /* SchemeTableViewCell.swift */,
 				8AD5E6B6292F61E200A6F1CA /* SchemeTableViewController.swift */,
-				8A6112842967A5830038D322 /* SchemeImageViewController.swift */,
+				8A5400ED295BE4F5000A5934 /* PortraitViewController.swift */,
+				8A6112842967A5830038D322 /* SchemeDiagramViewController.swift */,
 				26E7C3992920CB920068D56C /* ColorSchemeView.swift */,
 				8A5A707229A6F3110030F7FB /* ColorSchemeInfoSingleLineView.swift */,
 				8A895FDB29A5AD9600B667DA /* ColorSchemePortrait.swift */,
@@ -336,10 +342,11 @@
 				8A41E6C02952B0D50033B865 /* cJSON.c */,
 				8A41E6BF2952B0D50033B865 /* cJSON.h */,
 				8AAC9C5F2918FF64004680B6 /* Alice-Bridging-Header.h */,
-				8AAC9C4B2918D9CF004680B6 /* Main.storyboard */,
+				8AB35AB129D138460064C11B /* Illustration.xcassets */,
 				8AAC9C4E2918D9D0004680B6 /* Assets.xcassets */,
-				8AAC9C502918D9D0004680B6 /* LaunchScreen.storyboard */,
 				8AAC9C532918D9D0004680B6 /* Info.plist */,
+				8AAC9C4B2918D9CF004680B6 /* Main.storyboard */,
+				8AAC9C502918D9D0004680B6 /* LaunchScreen.storyboard */,
 			);
 			path = Alice;
 			sourceTree = "<group>";
@@ -392,16 +399,8 @@
 			knownRegions = (
 				en,
 				Base,
-				"zh-HK",
 				"zh-Hans",
 				"zh-Hant",
-				fr,
-				de,
-				it,
-				ja,
-				ko,
-				es,
-				tr,
 			);
 			mainGroup = 8AAC9C392918D9CF004680B6;
 			productRefGroup = 8AAC9C432918D9CF004680B6 /* Products */;
@@ -418,12 +417,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ACA187629BB028B0035F872 /* Icons in Resources */,
-				8ACA187529BB028B0035F872 /* Samples in Resources */,
+				8AB35AB229D138460064C11B /* Illustration.xcassets in Resources */,
+				8ACA187529BB028B0035F872 /* Sample in Resources */,
 				8A5A70C629A70D9A0030F7FB /* Localizable.strings in Resources */,
 				8AAC9C522918D9D0004680B6 /* LaunchScreen.storyboard in Resources */,
 				8AAC9C4F2918D9D0004680B6 /* Assets.xcassets in Resources */,
-				8ACA187229BB012B0035F872 /* icon-app-launch@3x.png in Resources */,
+				8AB35AAE29D134DF0064C11B /* icon-app-launch@3x.png in Resources */,
 				8AAC9C4D2918D9CF004680B6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,7 +445,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\nyear=$(date +\"%Y\")\ncopyright=\"Copyright © $year Yidian Technology Co., Ltd. All Rights Reserved\"\n/usr/libexec/PlistBuddy -c \"Set :NSHumanReadableCopyright $copyright\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n        \n";
+			shellScript = "#!/bin/sh\nyear=$(date +\"%Y\")\ncopyright=\"Copyright © $year Yidian Technology Co., Ltd.\\nAll Rights Reserved\"\n/usr/libexec/PlistBuddy -c \"Set :NSHumanReadableCopyright $copyright\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -457,14 +456,17 @@
 			files = (
 				8A4F084E29B57EA9001EABB9 /* PhotoPortraitView.swift in Sources */,
 				2606651D29287A000020938F /* SampleMoveOperationViewController.swift in Sources */,
+				8A15B78329C2AE1900426233 /* StorePaymentProductTableViewCell.swift in Sources */,
 				260665212928834F0020938F /* SampleSchemeOperationViewController.swift in Sources */,
 				2606651F292881080020938F /* SampleScaleOperationViewController.swift in Sources */,
 				8A19DD5B295990B00058CE39 /* LocalLibraryItemDetailViewCell.swift in Sources */,
 				8A5FAA6F291DE4E400FDFF76 /* ColorWheelView.swift in Sources */,
 				8A145A9B291CED8B001DA76C /* SampleRegionView.swift in Sources */,
 				8A68E249299DB93E00692BFE /* Alice+UIView.swift in Sources */,
+				8A606C0929C008FC00844B4F /* AppStore.swift in Sources */,
 				8A86DFFA297B6FF800329118 /* ColorSchemeGenerator.swift in Sources */,
 				8A68E24B299DB96200692BFE /* Alice+UIImage.swift in Sources */,
+				8A4B14CB29C06A9A0039FBCC /* TermsAndConditionsViewController.swift in Sources */,
 				8A4F085B29B5B926001EABB9 /* Square.swift in Sources */,
 				8A145A99291CC9DA001DA76C /* MeViewController.swift in Sources */,
 				8A5A707329A6F3110030F7FB /* ColorSchemeInfoSingleLineView.swift in Sources */,
@@ -475,21 +477,25 @@
 				8A4F085929B5B91C001EABB9 /* Complementary.swift in Sources */,
 				8A6A43A4291A374300603EB1 /* DominantColor.cpp in Sources */,
 				8A4F085029B57EEE001EABB9 /* ColorWheelPortraitView.swift in Sources */,
-				8AAC9C4A2918D9CF004680B6 /* CreateViewController.swift in Sources */,
+				8AAC9C4A2918D9CF004680B6 /* InspirationViewController.swift in Sources */,
 				8AA6EA1C294FF95E00E6DC5D /* Snapshoot.swift in Sources */,
 				8AC73A9B299238C000BFF0C7 /* ManualViewController.swift in Sources */,
+				8A1E612D29D11FA700EB81E6 /* NetworkNotificationViewController.swift in Sources */,
+				2668B2C129D06974000C49F5 /* NetworkReachability.swift in Sources */,
 				8A97329A297912B700CF88C6 /* NavigationController.swift in Sources */,
 				8A41E6C12952B0D50033B865 /* cJSON.c in Sources */,
+				8AB35AB429D17BD50064C11B /* Settings.swift in Sources */,
 				8AFDB970297534EC00970C0B /* ColorComposer.swift in Sources */,
 				8ABB197D296D0D7900B46462 /* NotificationView.swift in Sources */,
-				8A06F71B295D647E00F8FEB4 /* ColorTableViewCell.swift in Sources */,
-				8A6112852967A5830038D322 /* SchemeImageViewController.swift in Sources */,
+				8A06F71B295D647E00F8FEB4 /* SchemeTableViewCell.swift in Sources */,
+				8A6112852967A5830038D322 /* SchemeDiagramViewController.swift in Sources */,
+				8A15B78529C2BA7B00426233 /* ProductView.swift in Sources */,
 				8AAC9C462918D9CF004680B6 /* AppDelegate.swift in Sources */,
 				8A5400EE295BE4F5000A5934 /* PortraitViewController.swift in Sources */,
 				8AB3B95729655CDB00780538 /* ColorFunction.swift in Sources */,
 				8A895FDC29A5AD9600B667DA /* ColorSchemePortrait.swift in Sources */,
 				8AAC9C5C2918F056004680B6 /* ColorSampleViewController.swift in Sources */,
-				8AAC9C5A2918DD84004680B6 /* ExploreViewController.swift in Sources */,
+				8AAC9C5A2918DD84004680B6 /* DiscoverViewController.swift in Sources */,
 				8A5FAA71291E37C300FDFF76 /* TabBarController.swift in Sources */,
 				8AC73A9D2992390900BFF0C7 /* AboutViewController.swift in Sources */,
 				8ABFBB3729557BE100C0D9A4 /* LocalLibraryViewController.swift in Sources */,
@@ -504,6 +510,7 @@
 				8AA6EA1A294FF78C00E6DC5D /* LocalLibrary.swift in Sources */,
 				8AD5E6B7292F61E200A6F1CA /* SchemeTableViewController.swift in Sources */,
 				26E7C39A2920CB920068D56C /* ColorSchemeView.swift in Sources */,
+				8A4B14C929C06A4E0039FBCC /* PrivacyPolicyViewController.swift in Sources */,
 				8A4F085529B5B8FC001EABB9 /* Monochromatic.swift in Sources */,
 				8A4F085F29B5B947001EABB9 /* Custom.swift in Sources */,
 			);
@@ -516,7 +523,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				8A5A70C729A70D9A0030F7FB /* en */,
-				8A5A70EC29A761370030F7FB /* zh-HK */,
 				8A5A70ED29A761390030F7FB /* zh-Hans */,
 				8A5A70EE29A7613B0030F7FB /* zh-Hant */,
 			);
@@ -529,16 +535,8 @@
 			children = (
 				8AAC9C4C2918D9CF004680B6 /* Base */,
 				8A5A709029A700D90030F7FB /* en */,
-				8A5A70C929A70DCE0030F7FB /* zh-HK */,
 				8A5A70D029A70E790030F7FB /* zh-Hans */,
 				8A5A70D329A70E810030F7FB /* zh-Hant */,
-				8A5A70D629A70EA00030F7FB /* fr */,
-				8A5A70D929A70EB60030F7FB /* de */,
-				8A5A70DC29A70EC30030F7FB /* it */,
-				8A5A70DF29A70ECD0030F7FB /* ja */,
-				8A5A70E229A70EE00030F7FB /* ko */,
-				8A5A70E529A70EEB0030F7FB /* es */,
-				8A5A70E829A70EF40030F7FB /* tr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -548,17 +546,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				8AAC9C512918D9D0004680B6 /* Base */,
-				8A5A70CA29A70DCE0030F7FB /* zh-HK */,
 				8A5A70CD29A70DFE0030F7FB /* en */,
 				8A5A70D129A70E790030F7FB /* zh-Hans */,
 				8A5A70D429A70E810030F7FB /* zh-Hant */,
-				8A5A70D729A70EA00030F7FB /* fr */,
-				8A5A70DA29A70EB60030F7FB /* de */,
-				8A5A70DD29A70EC30030F7FB /* it */,
-				8A5A70E029A70ECD0030F7FB /* ja */,
-				8A5A70E329A70EE00030F7FB /* ko */,
-				8A5A70E629A70EEB0030F7FB /* es */,
-				8A5A70E929A70EF40030F7FB /* tr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -690,18 +680,20 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = N77YA486UJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Alice/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Coloury;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Yidian Technology Co., Ltd. All Rights Reserved";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Yidian Technology Co., Ltd.\nAll Rights Reserved";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Verify Subscription Receipt Info";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Save Image To Photo Library";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -727,18 +719,20 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = N77YA486UJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Alice/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Coloury;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Yidian Technology Co., Ltd. All Rights Reserved";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Yidian Technology Co., Ltd.\nAll Rights Reserved";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Verify Subscription Receipt Info";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Save Image To Photo Library";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (

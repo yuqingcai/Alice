@@ -9,30 +9,26 @@ import UIKit
 
 class MeViewController: UIViewController {
 
+    @IBOutlet weak var navigationBar: UINavigationBar!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
         overrideUserInterfaceStyle = .dark
-    }
-    
-    override var prefersStatusBarHidden: Bool {
-        return true
+        configureNavigationbar()
     }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .portrait
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override var prefersStatusBarHidden: Bool {
+        return false
     }
-    */
+    
+    func configureNavigationbar() {
+        navigationBar.clipsToBounds = true
+        navigationBar.topItem?.title = NSLocalizedString("Me-NavigationTitle", comment: "")
+    }
 
 }
+
