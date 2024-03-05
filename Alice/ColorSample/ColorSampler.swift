@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ColorSampler: NSObject, ColorSchemeGenerator {
+class ColorSampler: ColorSchemeGenerator {
     
     static let appendPhotoSchemeNotification: Notification.Name = Notification.Name("appendPhotoSchemeNotification")
     static let updatePhotoSchemeNotification: Notification.Name = Notification.Name("updatePhotoSchemeNotification")
@@ -17,15 +17,13 @@ class ColorSampler: NSObject, ColorSchemeGenerator {
     
     private var schemes: Array<ColorScheme>?
     private var subject: UIImage?
-    private let subjectWidth: UInt32 = 512
-    private let subjectHeight: UInt32 = 512
+    private let subjectWidth: UInt32 = 300
+    private let subjectHeight: UInt32 = 300
     private var defaultColorCount = 5
     
     private var activedSchemeIndex: Int?
-    var createDateTime: Date?
-    var name: String?
-    var uuid: UUID?
     var miniSampleRatio = 0.1
+    var sampleType: SampleType = .frequence
     
     private var photo: UIImage? {
         didSet {
@@ -40,7 +38,7 @@ class ColorSampler: NSObject, ColorSchemeGenerator {
         }
     }
     
-    func set(photo: UIImage) {
+    override func set(photo: UIImage) {
         self.photo = photo
         
         if let photo = self.photo {
@@ -49,7 +47,7 @@ class ColorSampler: NSObject, ColorSchemeGenerator {
             let x = (photo.size.width - width)*0.5
             let y = (photo.size.height - height)*0.5
             let rect = CGRect(x: x, y: y, width: width, height: height)
-            if let scheme = generate(colorCount: defaultColorCount, frame: rect, photo: photo, subject: subject) {
+            if let scheme = generate(colorCount: defaultColorCount, frame: rect, photo: photo, subject: subject, type: sampleType) {
                 schemes = []
                 schemes!.append(scheme)
                 activedSchemeIndex = 0
@@ -57,7 +55,7 @@ class ColorSampler: NSObject, ColorSchemeGenerator {
         }
     }
     
-    func getPhoto() -> UIImage? {
+    override func getPhoto() -> UIImage? {
         return photo
     }
     
@@ -84,8 +82,8 @@ class ColorSampler: NSObject, ColorSchemeGenerator {
     private func createSampleTarget(_ image: UIImage?, _ size: CGSize) -> UIImage? {
         return image?.resize(to: size, in: .aspectFill)
     }
-        
-    private func generate(colorCount: Int, frame: CGRect, photo: UIImage?, subject: UIImage?) -> ColorScheme? {
+    
+    private func generate(colorCount: Int, frame: CGRect, photo: UIImage?, subject: UIImage?, type: SampleType) -> ColorScheme? {
         guard let photo = photo else {
             return nil
         }
@@ -136,51 +134,48 @@ class ColorSampler: NSObject, ColorSchemeGenerator {
                             height: adjust.size.height * ratio)
         
         if (input.byteOrderInfo == .orderDefault) {
-            redOrder = 2
-            greenOrder = 1
-            blueOrder = 0
-            alphaOrder = 3
-        }
-        else if (input.byteOrderInfo == .order32Little) {
             redOrder = 0
             greenOrder = 1
             blueOrder = 2
             alphaOrder = 3
         }
-        
-        guard let dominantColor: UnsafeMutablePointer<DominantColor> =
-                DominantColorFromBitmapBuffer(UnsafePointer<UInt8>(CFDataGetBytePtr(data)),
-                                              UInt32(input.bytesPerRow),
-                                              UInt32(colorCount),
-                                              UInt32(sampleRect.origin.x),
-                                              UInt32(sampleRect.origin.y),
-                                              UInt32(sampleRect.size.width),
-                                              UInt32(sampleRect.size.height),
-                                              UInt32(redOrder),
-                                              UInt32(greenOrder),
-                                              UInt32(blueOrder),
-                                              UInt32(alphaOrder)
-                ) else {
-            return nil
-        }
-                
-        var items: Array<ColorItem> = []
-        let colors: UnsafeMutablePointer<RGBAWColor> = dominantColor.pointee.colors
-        for i in 0 ..< dominantColor.pointee.count {
-            let item = ColorItem(red: colors[Int(i)].red, green: colors[Int(i)].green, blue: colors[Int(i)].blue, alpha: colors[Int(i)].alpha, weight: colors[Int(i)].weight)
-            items.append(item)
+        else if (input.byteOrderInfo == .order32Little) {
+            redOrder = 2
+            greenOrder = 1
+            blueOrder = 0
+            alphaOrder = 3
         }
         
-        FreeDominantColor(dominantColor)
-        let scheme = ColorScheme(frame: frame, items: items.sorted(by: { $0.weight! > $1.weight! }))
-        return scheme
+        var dominantColor: UnsafeMutablePointer<DominantColor>? = nil
+        if (type == .frequence) {
+            dominantColor = DominantColorByFrequenceFromBitmapBuffer(UnsafePointer<UInt8>(CFDataGetBytePtr(data)), UInt32(input.bytesPerRow), UInt32(colorCount), UInt32(sampleRect.origin.x), UInt32(sampleRect.origin.y), UInt32(sampleRect.size.width), UInt32(sampleRect.size.height), UInt32(redOrder), UInt32(greenOrder), UInt32(blueOrder), UInt32(alphaOrder))
+        }
+        else if (type == .sensitive) {
+            dominantColor = DominantColorBySensitiveFromBitmapBuffer(UnsafePointer<UInt8>(CFDataGetBytePtr(data)), UInt32(input.bytesPerRow), UInt32(colorCount), UInt32(sampleRect.origin.x), UInt32(sampleRect.origin.y), UInt32(sampleRect.size.width), UInt32(sampleRect.size.height), UInt32(redOrder), UInt32(greenOrder), UInt32(blueOrder), UInt32(alphaOrder))
+        }
+        
+        if let dominantColor = dominantColor {
+            var items: Array<ColorItem> = []
+            let colors: UnsafeMutablePointer<RawColor> = dominantColor.pointee.colors
+            for i in 0 ..< dominantColor.pointee.count {
+                let item = ColorItem(red: colors[Int(i)].red, green: colors[Int(i)].green, blue: colors[Int(i)].blue, alpha: colors[Int(i)].alpha, weight: colors[Int(i)].weight)
+                items.append(item)
+            }
+            
+            FreeDominantColor(dominantColor)
+            
+            let scheme = ColorScheme(frame: frame, items: items.sorted(by: { $0.weight! > $1.weight! }))
+            return scheme
+        }
+        
+        return nil
     }
     
-    func sample(colorCount: Int, frame: CGRect) {
+    override func sample(colorCount: Int, frame: CGRect) {
         if (schemes == nil) {
             schemes = []
         }
-        if let scheme = generate(colorCount: colorCount, frame: frame, photo: photo, subject: subject) {
+        if let scheme = generate(colorCount: colorCount, frame: frame, photo: photo, subject: subject, type: sampleType) {
             schemes!.append(scheme)
             let index = schemes!.endIndex - 1
             activedSchemeIndex = index
@@ -188,7 +183,7 @@ class ColorSampler: NSObject, ColorSchemeGenerator {
         }
     }
     
-    func updateScheme(colorCount: Int, frame: CGRect, index: Int) {
+    override func updateScheme(colorCount: Int, frame: CGRect, index: Int) {
         if (schemes == nil) {
             return
         }
@@ -206,13 +201,13 @@ class ColorSampler: NSObject, ColorSchemeGenerator {
             return
         }
         
-        if let scheme = generate(colorCount: colorCount, frame: frame, photo: photo, subject: subject) {
+        if let scheme = generate(colorCount: colorCount, frame: frame, photo: photo, subject: subject, type: sampleType) {
             schemes![index] = scheme
             NotificationCenter.default.post(name: ColorSampler.updatePhotoSchemeNotification, object: self, userInfo: ["scheme": schemes![index], "index": index])
         }
     }
     
-    func setScheme(frame: CGRect, index: Int) {
+    override func setScheme(frame: CGRect, index: Int) {
         if (schemes == nil) {
             return
         }
@@ -234,7 +229,7 @@ class ColorSampler: NSObject, ColorSchemeGenerator {
         NotificationCenter.default.post(name: ColorSampler.updatePhotoSchemeFrameNotification, object: self, userInfo: ["scheme": schemes![index], "index": index])
     }
     
-    func setScheme(colorCount: Int, index: Int) {
+    override func setScheme(colorCount: Int, index: Int) {
         if (schemes == nil) {
             return
         }
@@ -246,7 +241,7 @@ class ColorSampler: NSObject, ColorSchemeGenerator {
         NotificationCenter.default.post(name: ColorSampler.updatePhotoSchemeColorCountNotification, object: self, userInfo: ["scheme": schemes![index], "index": index])
     }
     
-    func removeScheme(index: Int) {
+    override func removeScheme(index: Int) {
         if (schemes == nil) {
             return
         }
@@ -266,40 +261,20 @@ class ColorSampler: NSObject, ColorSchemeGenerator {
         NotificationCenter.default.post(name: ColorSampler.removePhotoSchemeNotification, object: self, userInfo: ["scheme": scheme, "index": index])
     }
     
-    
-    func set(name: String?) {
-        if let trimmed = name?.trimmingCharacters(in: .whitespacesAndNewlines) {
-            self.name = trimmed
-        }
-    }
-    
-    func getName() -> String {
-        if name == nil {
-            name = ""
-        }
-        return name!
-    }
-    
-    func getType() -> ColorSchemeGeneratorType {
+    override func getType() -> ColorSchemeGeneratorType {
         return .colorSample
     }
     
-    func getId() -> UUID {
-        if uuid == nil {
-            uuid = UUID()
-        }
-        return uuid!
-    }
-    
-    func getThumbnail() -> UIImage? {
+    override func getThumbnail() -> UIImage? {
         guard let photo = photo else {
             return nil
         }
         
-        let size = CGSize(width: 512.0, height: 512.0)
+        let width = 512.0
+        let height = 512.0
         let rawSize = photo.size
-        let widthRatio  = size.width  / rawSize.width
-        let heightRatio = size.height / rawSize.height
+        let widthRatio  = width  / rawSize.width
+        let heightRatio = height / rawSize.height
         
         var newSize: CGSize
         if (widthRatio < heightRatio) {
@@ -372,31 +347,19 @@ class ColorSampler: NSObject, ColorSchemeGenerator {
         return image
     }
     
-    func getSchemes() -> Array<ColorScheme>? {
+    override func getSchemes() -> Array<ColorScheme>? {
         return schemes
     }
     
-    func getActivedSchemeIndex() -> Int? {
+    override func getActivedSchemeIndex() -> Int? {
         return activedSchemeIndex
     }
     
-    func setActivedSchemeIndex(_ index: Int) {
+    override func setActivedSchemeIndex(_ index: Int) {
         activedSchemeIndex = index
     }
-    
-    func getActivedColorIndex() -> Int? {
-        return nil
-    }
-    
-    func setActivedColorIndex(_ index: Int) {
         
-    }
-    
-    func getExtensionSchemes() -> Array<ColorScheme>? {
-        return nil
-    }
-    
-    func snapshoot() -> Snapshoot? {
+    override func snapshoot() -> Snapshoot? {
         var createDateTime = createDateTime
         if createDateTime == nil {
             createDateTime = Date()
@@ -407,7 +370,7 @@ class ColorSampler: NSObject, ColorSchemeGenerator {
         return snapshoot
     }
     
-    func restore(by snapshoot: Snapshoot) {
+    override func restore(by snapshoot: Snapshoot) {
         photo = snapshoot.photo
         subject = createSampleTarget(photo, CGSize(width: CGFloat(subjectWidth), height: CGFloat(subjectHeight)))
         uuid = snapshoot.uuid
@@ -417,7 +380,7 @@ class ColorSampler: NSObject, ColorSchemeGenerator {
         createDateTime = snapshoot.createDateTime
     }
     
-    func clear() {
+    override func clear() {
         photo = nil
         schemes = nil
         activedSchemeIndex = nil
@@ -425,16 +388,8 @@ class ColorSampler: NSObject, ColorSchemeGenerator {
         uuid = nil
         name = nil
     }
-    
-    func getColorComposeType() -> ColorComposeType? {
-        return nil
-    }
-    
-    func setColorComposeType(type: ColorComposeType) {
         
-    }
-    
-    func getPortrait() -> PortraitView? {
+    override func getPortrait() -> PortraitView? {
         var portraitRatio = 1.0
         if (UIDevice.current.userInterfaceIdiom == .phone) {
             portraitRatio = 1.333 // 4:3
@@ -456,27 +411,15 @@ class ColorSampler: NSObject, ColorSchemeGenerator {
         return portrait
     }
     
-    func getHues() -> Array<CGFloat>? {
-        return nil
-    }
-        
-    func set(selector: Int, hue: Int32?, saturation: Int32?, brightness: Int32?) {
-        
-    }
-    
-    func getPortraitScheme() -> ColorScheme? {
+    override func getPortraitScheme() -> ColorScheme? {
         guard let photo = photo else {
             return nil
         }
         let subject = createSampleTarget(photo, CGSize(width: CGFloat(200), height: CGFloat(200)))
-        return generate(colorCount: 5, frame: CGRect(x: 0.0, y: 0.0, width: photo.size.width, height: photo.size.height), photo: photo, subject: subject)
+        return generate(colorCount: 5, frame: CGRect(x: 0.0, y: 0.0, width: photo.size.width, height: photo.size.height), photo: photo, subject: subject, type: .frequence)
     }
-    
-    func getKeyColorIndex() -> Int? {
-        return nil
-    }
-    
-    func setKeyColorIndex(_ index: Int) {
         
+    override func setSampleType(_ type: SampleType) {
+        sampleType = type
     }
 }

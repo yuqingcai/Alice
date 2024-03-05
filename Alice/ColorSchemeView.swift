@@ -86,30 +86,35 @@ class ColorItemSelectorController: UIView {
     
 }
 
-class ColorSchemeItemView: UIView {
-    var index: Int
-    override init(frame: CGRect) {
-        index = 0
-        super.init(frame: frame)
-    }
-    
-    required init?(coder: NSCoder) {
-        index = 0
-        super.init(coder: coder)
-    }
-}
-
 class ColorSchemeView: UIView {
+    
+    class ColorSchemeItemView: UIView {
+        
+        var index: Int
+        
+        override init(frame: CGRect) {
+            index = 0
+            super.init(frame: frame)
+        }
+        
+        required init?(coder: NSCoder) {
+            index = 0
+            super.init(coder: coder)
+        }
+    }
     
     var delegate: ColorItemSelectorDelegate?
     
-    private var columns: Int?
+    private var rows: Int = 0
+    private var columns: Int = 0
     var itemViews: Array<ColorSchemeItemView>?
     var animate: Bool = true
     
+    private var numberOfBlankItem: Int = 0
+    
     var items: Array<ColorItem>? {
         didSet {
-            if (columns == nil) {
+            if (columns == 0) {
                 return
             }
             
@@ -148,28 +153,18 @@ class ColorSchemeView: UIView {
     }
     
     func createItemViews() {
-        guard let columns = columns, let items = items else {
+        guard let items = items else {
             return
         }
+               
+        var itemViewSize: CGSize = .zero
+        get(&rows, &itemViewSize, from: items.count, in: columns)
         
-        var rows = 0
-        var itemViewWidth = 0.0
-        var itemViewHeight = 0.0
-        
-        if (items.count > columns) {
-            rows = Int(CGFloat(items.count) / CGFloat(columns) + 0.5)
-            itemViewWidth = frame.size.width / CGFloat(columns)
-            itemViewHeight = frame.size.height / CGFloat(rows)
-        }
-        else {
-            rows = 1
-            itemViewWidth = frame.size.width / CGFloat(items.count)
-            itemViewHeight = frame.size.height / CGFloat(rows)
-        }
+        numberOfBlankItem = rows * columns - items.count
         
         itemViews = []
         for i in 0 ..< items.count {
-            let rect = CGRect(x: itemViewWidth*Double((i%columns)), y: itemViewHeight*Double((i/columns)), width: itemViewWidth, height: itemViewHeight)
+            let rect = CGRect(x: itemViewSize.width*Double((i%columns)), y: itemViewSize.height*Double((i/columns)), width: itemViewSize.width, height: itemViewSize.height)
             let itemView = ColorSchemeItemView(frame: rect)
             setItemViewBackgroundColor(view: itemView, colorItem: items[i])
             if (animate == true) {
@@ -238,28 +233,31 @@ class ColorSchemeView: UIView {
     }
     
     func updateItemViewsBound() {
-        guard let columns = columns, let itemViews = itemViews, let items = items else {
+        guard let itemViews = itemViews, let items = items else {
             return
         }
         
-        var rows = 0
-        var itemViewWidth = 0.0
-        var itemViewHeight = 0.0
-        
-        if (items.count > columns) {
-            rows = Int(CGFloat(items.count) / CGFloat(columns) + 0.5)
-            itemViewWidth = frame.size.width / CGFloat(columns)
-            itemViewHeight = frame.size.height / CGFloat(rows)
-        }
-        else {
-            rows = 1
-            itemViewWidth = frame.size.width / CGFloat(items.count)
-            itemViewHeight = frame.size.height / CGFloat(rows)
-        }
+        var itemViewSize: CGSize = .zero
+        get(&rows, &itemViewSize, from: items.count, in: columns)
         
         for i in 0 ..< itemViews.count {
-            let rect = CGRect(x: itemViewWidth*Double((i%columns)), y: itemViewHeight*Double((i/columns)), width: itemViewWidth, height: itemViewHeight)
+            let rect = CGRect(x: itemViewSize.width*Double((i%columns)), y: itemViewSize.height*Double((i/columns)), width: itemViewSize.width, height: itemViewSize.height)
             itemViews[i].frame = rect
+        }
+        
+    }
+    
+    func get(_ rows: UnsafeMutablePointer<Int>, _ itemViewSize: UnsafeMutablePointer<CGSize>, from numberOfItems: Int, in columns: Int) {
+        
+        if (numberOfItems > columns) {
+            rows.pointee = Int(CGFloat(numberOfItems + columns - 1) / CGFloat(columns))
+            itemViewSize.pointee.width = frame.size.width / CGFloat(columns)
+            itemViewSize.pointee.height = frame.size.height / CGFloat(rows.pointee)
+        }
+        else {
+            rows.pointee = 1
+            itemViewSize.pointee.width = frame.size.width / CGFloat(numberOfItems)
+            itemViewSize.pointee.height = frame.size.height / CGFloat(rows.pointee)
         }
         
     }
@@ -301,6 +299,33 @@ class ColorSchemeView: UIView {
         }
         else if (UIDevice.current.userInterfaceIdiom == .pad) {
             columns = 10
+        }
+    }
+    
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        
+        if (numberOfBlankItem != 0) {
+        
+            if let itemViews = itemViews {
+                
+                let viewSize = itemViews[0].frame.size
+                let y = CGFloat(rows - 1) * viewSize.height
+                var x = CGFloat(columns - numberOfBlankItem) * CGFloat(viewSize.width)
+                
+                for _ in 0 ..< numberOfBlankItem {
+                    
+                    UIColor(named: "color-scheme-view-background")?.setFill()
+                    let rectPath = UIBezierPath(rect: CGRect(origin: CGPoint(x: x, y: y), size: viewSize))
+                    rectPath.fill()
+                    
+                    UIColor(named: "color-scheme-view-blank-item")?.setFill()
+                    let p = CGPoint(x: x + (viewSize.width*0.5), y: y + (viewSize.height*0.5))
+                    let dotPath = UIBezierPath(arcCenter: p, radius: viewSize.width*0.05, startAngle: CGFloat(0), endAngle: CGFloat(Double.pi * 2), clockwise: true)
+                    dotPath.fill()
+                    x += CGFloat(viewSize.width)
+                }
+            }
         }
     }
     

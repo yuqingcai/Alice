@@ -10,7 +10,6 @@ import UIKit
 class SchemeTableViewCell: UITableViewCell {
 
     @IBOutlet weak var colorView: UIImageView!
-    @IBOutlet weak var labelView: UIView!
     @IBOutlet weak var label: UILabel!
     
     override func awakeFromNib() {

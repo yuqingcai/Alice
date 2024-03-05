@@ -62,7 +62,6 @@ class SchemeTableViewController: UIViewController, UITableViewDelegate, UITableV
             return
         }
 
-        
         if (schemeScrollView.subviews.count >= 1) {
             schemeViewAnimate = false
             schemeScrollView.subviews.forEach({
@@ -122,7 +121,7 @@ class SchemeTableViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     @IBAction func showSchemeImage(sender: Any) {
-        self.performSegue(withIdentifier: "IDSegueSchemeImage", sender: self)
+        self.performSegue(withIdentifier: "IDSegueSchemeDiagram", sender: self)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -139,38 +138,21 @@ class SchemeTableViewController: UIViewController, UITableViewDelegate, UITableV
             return tableView.dequeueReusableCell(withIdentifier: "IDSchemeTableViewCell", for:indexPath) as! SchemeTableViewCell
         }
         
+        let item = schemes[activedSchemeIndex].items[indexPath.item]
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "IDSchemeTableViewCell", for:indexPath) as! SchemeTableViewCell
         cell.selectionStyle = .none
         cell.backgroundView = UIView()
         cell.backgroundView?.backgroundColor = UIColor(named: "color-window-background")
         cell.selectedBackgroundView = UIView()
         cell.selectedBackgroundView?.backgroundColor = UIColor(named: "color-window-background")
-        cell.colorView.backgroundColor = cell.backgroundView?.backgroundColor
-        cell.labelView.backgroundColor = cell.backgroundView?.backgroundColor
-        
-        let imageViewWidth = cell.frame.height - tableRowInsets.top - tableRowInsets.bottom
-        let imageViewHeight = imageViewWidth
-        let labelViewHeight = imageViewWidth
-        cell.colorView.frame = CGRect(x: tableRowInsets.left, y: tableRowInsets.top, width:imageViewWidth, height: imageViewHeight)
-        
-        cell.labelView.frame = CGRect(x: tableRowInsets.left + imageViewWidth + tableRowInsets.left, y: tableRowInsets.top, width: cell.frame.size.width - tableRowInsets.left - imageViewWidth - tableRowInsets.left, height: labelViewHeight)
-        
-        let item = schemes[activedSchemeIndex].items[indexPath.item]
-        
         cell.colorView.backgroundColor = UIColor(colorItem: item)
         cell.colorView.layer.cornerRadius = 10.0
         cell.colorView.layer.cornerCurve = .continuous
         cell.colorView.clipsToBounds = true
-        
-        let labelInsetX = 0.0
-        let labelInsetY = (cell.labelView.frame.size.height - cell.label.frame.size.height) / 2.0
-        let labelWidth = cell.labelView.frame.size.width - labelInsetX*2.0
-        let labelHeight = cell.label.frame.height
-        
-        cell.label.frame = CGRect(x: labelInsetX, y: labelInsetY, width: labelWidth, height: labelHeight)
         cell.label.text = detailString(item: item, type: colorType)
-        
-        cell.separatorInset = UIEdgeInsets(top: 0, left: tableRowInsets.left + imageViewWidth + tableRowInsets.left, bottom: 0, right: tableRowInsets.right)
+        let colorViewFrame = cell.colorView.frame
+        cell.separatorInset = UIEdgeInsets(top: 0, left: colorViewFrame.origin.x + colorViewFrame.size.width, bottom: 0, right: 0.0)
         
         return cell
     }
@@ -286,7 +268,7 @@ class SchemeTableViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func configureNavigationbar() {
-        navigationItem.title = NSLocalizedString("SchemeTable-NavigationTitle", comment: "")
+        navigationItem.title = NSLocalizedString("SchemeList-NavigationTitle", comment: "")
     }
     
     func configureToolbar() {
@@ -362,8 +344,8 @@ class SchemeTableViewController: UIViewController, UITableViewDelegate, UITableV
             self.present(dialogMessage, animated: true, completion: nil)
         })
         
-        let image = UIAction(title: NSLocalizedString("Scheme-MenuItem", comment: ""), image: UIImage(named: "icon-scheme-diagram"), handler: { (_) in
-            self.performSegue(withIdentifier: "IDSegueSchemeImage", sender: self)
+        let image = UIAction(title: NSLocalizedString("SchemeDiagram-MenuItem", comment: ""), image: UIImage(named: "icon-scheme-diagram"), handler: { (_) in
+            self.performSegue(withIdentifier: "IDSegueSchemeDiagram", sender: self)
         })
                 
         let ase = UIAction(title: NSLocalizedString("AdobeSwatchExchange-MenuItem", comment: ""), image: UIImage(named: "icon-adobe"), handler: { (_) in

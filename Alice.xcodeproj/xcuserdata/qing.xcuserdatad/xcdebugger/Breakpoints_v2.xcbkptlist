@@ -256,5 +256,53 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1E441025-3B68-4FFD-B7BB-4E2CB3F6B968"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Alice/ColorPattern/WebViewBasePattern.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "getResourceDirectory()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1E441025-3B68-4FFD-B7BB-4E2CB3F6B968 - e21a4442098c0a77"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alice.WebViewBasePattern.getResourceDirectory() -&gt; Foundation.URL"
+                  moduleName = "Alice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/VolumeEXT/Project/LazycatDesign/Alice/Alice/ColorPattern/WebViewBasePattern.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "324">
+               </Location>
+               <Location
+                  uuid = "1E441025-3B68-4FFD-B7BB-4E2CB3F6B968 - e21a4442098c0a77"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alice.WebViewBasePattern.getResourceDirectory() -&gt; Foundation.URL"
+                  moduleName = "Alice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/VolumeEXT/Project/LazycatDesign/Alice/Alice/ColorPattern/WebViewBasePattern.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "448">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

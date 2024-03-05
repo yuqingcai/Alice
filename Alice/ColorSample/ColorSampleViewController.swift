@@ -20,7 +20,7 @@ class ColorSampleViewController: UIViewController {
     var indicatorView: UIActivityIndicatorView?
     let feedback = UIImpactFeedbackGenerator(style: .medium)
     var sampleSlots: Array<(SampleRegionView, ColorSchemeView)> = []
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -74,6 +74,7 @@ class ColorSampleViewController: UIViewController {
             return
         }
         
+        generator.setSampleType(.frequence)
         switchToolbar(to: "main")
         
         if (imageView == nil) {
@@ -352,9 +353,9 @@ class ColorSampleViewController: UIViewController {
     }
     
     @IBAction func appendPoint(_ sender: Any) {
-        guard let generator = appDelegate.colorSchemeGenerator, let photo = generator.getPhoto() else {
-            return
-        }
+//        guard let generator = appDelegate.colorSchemeGenerator, let photo = generator.getPhoto() else {
+//            return
+//        }
     }
     
     @IBAction func tapSampleRegion(_ sender:UIPinchGestureRecognizer) {
@@ -525,7 +526,7 @@ class ColorSampleViewController: UIViewController {
         
         let items = [
             
-            UIAction(title: NSLocalizedString("SchemeTable-MenuItem", comment: ""), image: UIImage(named: "icon-list"), handler: { (_) in
+            UIAction(title: NSLocalizedString("SchemeList-MenuItem", comment: ""), image: UIImage(named: "icon-list"), handler: { (_) in
                 self.performSegue(withIdentifier: "IDSegueColorSampleSchemeTable", sender: self)
             }),
             

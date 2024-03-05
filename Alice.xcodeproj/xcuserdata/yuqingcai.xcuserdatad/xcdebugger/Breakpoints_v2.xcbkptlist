@@ -215,22 +215,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B6756C1D-E4C3-4F69-9397-E0A25C43508C"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Alice/ColorSchemeView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
-            landmarkName = "items"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "A692F0F1-D682-46E9-979B-2D18B66E6AA5"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -311,54 +295,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BE340189-392B-4573-8076-15F840EF3334"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Alice/DominantColor.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "DominantColorFromBitmapBuffer(ptr, bytesPerRow, colorCount, offsetX, offsetY, sampleWidth, sampleHeight, redOrder, greenOrder, blueOrder, alphaOrder)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A98E9D0D-2306-45EE-A72D-D0D478F1A2DD"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Alice/DominantColor.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "DominantColorFromBitmapBuffer(ptr, bytesPerRow, colorCount, offsetX, offsetY, sampleWidth, sampleHeight, redOrder, greenOrder, blueOrder, alphaOrder)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E38E5CDB-9086-460A-8769-EF50292B1476"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Alice/DominantColor.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "DominantColorFromBitmapBuffer(ptr, bytesPerRow, colorCount, offsetX, offsetY, sampleWidth, sampleHeight, redOrder, greenOrder, blueOrder, alphaOrder)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "A90FA034-85F2-4176-9186-06F42A69ACAD"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -375,80 +311,96 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "29DB7182-E38D-4722-AD88-67E1BC534363"
+            uuid = "041AFE70-17FD-4E5D-88ED-CF665D64847E"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Alice/SchemeTableViewController.swift"
+            filePath = "Alice/DiscoverViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "413"
-            endingLineNumber = "413"
-            landmarkName = "configureToolbarItemShare()"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "041AFE70-17FD-4E5D-88ED-CF665D64847E - 4126e44ed2527b58"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alice.DiscoverViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
+                  moduleName = "Alice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/VolumeEXT/Project/LazycatDesign/Alice/Alice/DiscoverViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "616">
+               </Location>
+               <Location
+                  uuid = "041AFE70-17FD-4E5D-88ED-CF665D64847E - 4126e44ed2527b58"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alice.DiscoverViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
+                  moduleName = "Alice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/VolumeEXT/Project/LazycatDesign/Alice/Alice/DiscoverViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "696">
+               </Location>
+               <Location
+                  uuid = "041AFE70-17FD-4E5D-88ED-CF665D64847E - 4126e44ed2527b58"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alice.DiscoverViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
+                  moduleName = "Alice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/VolumeEXT/Project/LazycatDesign/Alice/Alice/DiscoverViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "876">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "128ABC62-1FEE-4CED-B677-6007724637A7"
+            uuid = "DE2559CD-84F9-4ACB-A683-CDCB275B42E6"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Alice/SchemeTableViewController.swift"
+            filePath = "Alice/ColorSample/DominantColor.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "192"
-            endingLineNumber = "192"
-            landmarkName = "tableView(_:didSelectRowAt:)"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "rgb2hsb(red, green, blue, hue, saturation, brightness)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5B9AF1C6-2B49-440E-8F44-7BD29D5CE489"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Alice/ColorFunction.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
+            landmarkName = "init(hue:saturation:brightness:alpha:weight:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "128ABC62-1FEE-4CED-B677-6007724637A7 - cd0d9656155635eb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Alice.SchemeTableViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
-                  moduleName = "Alice"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/VolumeEXT/Project/LazycatDesign/Alice/Alice/SchemeTableViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "194"
-                  endingLineNumber = "194"
-                  offsetFromSymbolStart = "284">
-               </Location>
-               <Location
-                  uuid = "128ABC62-1FEE-4CED-B677-6007724637A7 - cd0d9656155635eb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Alice.SchemeTableViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
-                  moduleName = "Alice"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/VolumeEXT/Project/LazycatDesign/Alice/Alice/SchemeTableViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "194"
-                  endingLineNumber = "194"
-                  offsetFromSymbolStart = "460">
-               </Location>
-               <Location
-                  uuid = "128ABC62-1FEE-4CED-B677-6007724637A7 - cd0d9656155635eb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Alice.SchemeTableViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
-                  moduleName = "Alice"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/VolumeEXT/Project/LazycatDesign/Alice/Alice/SchemeTableViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "194"
-                  endingLineNumber = "194"
-                  offsetFromSymbolStart = "552">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

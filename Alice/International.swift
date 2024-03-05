@@ -36,19 +36,19 @@ class LanguageDesignators: NSObject {
         var results = regex.matches(in: languageID, range: NSRange(languageID.startIndex..., in: languageID))
         if (results.count != 0) {
             let result = results[0]
-                // language
+            // language
             var range = result.range(at: 1)
             var startIndex = languageID.index(languageID.startIndex, offsetBy: range.location)
             var endIndex = languageID.index(languageID.startIndex, offsetBy: range.location+range.length)
             language = String(languageID[startIndex..<endIndex])
             
-                // script
+            // script
             range = result.range(at: 2)
             startIndex = languageID.index(languageID.startIndex, offsetBy: range.location)
-            endIndex = languageID.index(languageID.startIndex, offsetBy: range.location+range.length)
+            endIndex = languageID.index(languageID.startIndex, offsetBy:range.location+range.length)
             script = String(languageID[startIndex..<endIndex])
             
-                // region
+            // region
             range = result.range(at: 3)
             startIndex = languageID.index(languageID.startIndex, offsetBy: range.location)
             endIndex = languageID.index(languageID.startIndex, offsetBy: range.location+range.length)

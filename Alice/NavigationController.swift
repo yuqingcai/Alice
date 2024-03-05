@@ -22,7 +22,6 @@ class NavigationController: UINavigationController, UINavigationControllerDelega
             NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18),
             NSAttributedString.Key.foregroundColor: UIColor(named: "color-navigationbar-item") ?? UIColor.white,
         ]
-//        navigationBar.delegate = self
     }
     
     override var prefersStatusBarHidden: Bool {

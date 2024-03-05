@@ -5,8 +5,12 @@
 	<key>Application Description</key>
 	<string>A color sample and combination software</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2023 Yidian Technology Co., Ltd.
+	<string>Copyright © 2024 Yidian Technology Co., Ltd.
 All Rights Reserved</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string></string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

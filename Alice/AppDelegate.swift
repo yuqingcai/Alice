@@ -8,14 +8,17 @@
 import UIKit
 import StoreKit
 
-let retailVersion = true
+let retailVersion = false
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var colorSchemeGenerator: ColorSchemeGenerator?
     var colorSampler: ColorSampler?
     var colorComposer: ColorComposer?
+    var colorCardGenerator: ColorCardGenerator?
     var localLibrary: LocalLibrary?
+    var colorCardLibrary: ColorCardLibrary?
+    var colorPatternGenerator: ColorPatternGenerator?
     
     var receiptVerificationTimer: Timer?
     let receiptVerificationTimerInterval: Double = 30.0 //second
@@ -27,26 +30,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
         NotificationCenter.default.addObserver(self, selector: #selector(subscriptionActiveResponder), name: AppStore.subscriptionActiveNotification, object: nil)
-        
         NotificationCenter.default.addObserver(self, selector: #selector(subscriptionDeactiveResponder), name: AppStore.subscriptionDeactiveNotification, object: nil)
         
         ColorFunction.createWheelHues("Artist")
         localLibrary = LocalLibrary()
+        colorCardLibrary = ColorCardLibrary()
         colorSampler = ColorSampler()
+        colorPatternGenerator = ColorPatternGenerator()
+        colorCardGenerator = ColorCardGenerator()
         
         if let wheelHues = ColorFunction.wheelHues {
             colorComposer = ColorComposer(hues: wheelHues, defaultComposeType: .analogous)
         }
         
-        if ((localLibrary?.openDatabase()) == nil)  {
+        if (localLibrary?.openDatabase() == nil || colorCardLibrary?.openDatabase() == nil)  {
             return false
         }
-        
+                
         SKPaymentQueue.default().add(AppStore.sharedInstance)
         
         Settings.sharedInstance.load()
         
-        enableApplicationTimer()
+        if retailVersion == true {
+            enableApplicationTimer()
+        }
         
         return true
     }
@@ -70,6 +77,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         disableApplicationTimer()
         SKPaymentQueue.default().remove(AppStore.sharedInstance)
+        colorCardLibrary?.closeDatabase()
         localLibrary?.closeDatabase()
     }
     
@@ -115,4 +123,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
+extension AboutViewController: UIPopoverPresentationControllerDelegate {
+    func prepareForPopoverPresentation(_ popoverPresentationController: UIPopoverPresentationController) {
+        popoverPresentationController.sourceView = self.view
+        popoverPresentationController.sourceRect = CGRect(x: 0.0, y: 0.0, width: 400.0, height: 400.0)
+    }
+}
 

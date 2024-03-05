@@ -26,7 +26,6 @@ class Snapshoot : NSObject {
     static let thumbnailCopyType = "jpg"
     
     init (generator: ColorSchemeGenerator, createDateTime: Date, modifiedDateTime: Date) {
-        
         self.type = generator.getType()
         self.uuid = generator.getId()
         self.name = generator.getName()

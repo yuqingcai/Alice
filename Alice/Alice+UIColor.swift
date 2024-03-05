@@ -9,8 +9,6 @@ import UIKit
 
 extension UIColor {
     public convenience init(hex: String) {
-        let r, g, b: CGFloat
-
         if (hex.hasPrefix("#")) {
             let start = hex.index(hex.startIndex, offsetBy: 1)
             let hexColor = String(hex[start...])
@@ -20,10 +18,16 @@ extension UIColor {
                 var hexNumber: UInt64 = 0
 
                 if scanner.scanHexInt64(&hexNumber) {
-                    r = CGFloat((hexNumber & 0xff0000) >> 16) / 255
-                    g = CGFloat((hexNumber & 0x00ff00) >> 8) / 255
-                    b = CGFloat((hexNumber & 0x0000ff)) / 255
+                    let r = CGFloat((hexNumber & 0xff0000) >> 16) / 255.0
+                    let g = CGFloat((hexNumber & 0x00ff00) >> 8) / 255.0
+                    let b = CGFloat((hexNumber & 0x0000ff)) / 255.0
                     
+//                    let colorSpace = CGColorSpace(name: CGColorSpace.sRGB)!
+//                    let colorSpace = CGColorSpace(name: CGColorSpace.displayP3)!
+//                    let colorSpace = CGColorSpace(name: CGColorSpace.adobeRGB1998)!
+//                    let components: [CGFloat] = [r, g, b, 1.0]
+//                    let color = CGColor(colorSpace: colorSpace, components: components)!
+//                    self.init(cgColor: color)
                     self.init(red: r, green: g, blue: b, alpha: 1.0)
                     return
                 }
@@ -36,7 +40,19 @@ extension UIColor {
         
     public convenience init(colorItem: ColorItem) {
         if let red = colorItem.red, let green = colorItem.green, let blue = colorItem.blue, let alpha = colorItem.alpha {
-            self.init(red: CGFloat(red)/255.0, green: CGFloat(green)/255.0, blue: CGFloat(blue)/255.0, alpha: CGFloat(alpha)/100.0)
+            
+            let r = CGFloat(red) / 255.0
+            let g = CGFloat(green) / 255.0
+            let b = CGFloat(blue) / 255.0
+            let a = CGFloat(alpha) / 100.0
+            
+//            let colorSpace = CGColorSpace(name: CGColorSpace.sRGB)!
+//            let colorSpace = CGColorSpace(name: CGColorSpace.displayP3)!
+//            let colorSpace = CGColorSpace(name: CGColorSpace.adobeRGB1998)!
+//            let components: [CGFloat] = [r, g, b, a]
+//            let color = CGColor(colorSpace: colorSpace, components: components)!
+//            self.init(cgColor: color)
+            self.init(red: r, green: g, blue: b, alpha: a)
         }
         else {
             self.init(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)

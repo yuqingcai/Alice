@@ -29,13 +29,8 @@ class ColorComposeViewController: UIViewController {
         overrideUserInterfaceStyle = .dark
         configureNavigationbar()
         configureToolbar()
+        configureSchemeView()
         
-        schemeView.animate = false
-        schemeView.layer.cornerRadius = 10.0
-        schemeView.layer.cornerCurve = .continuous
-        schemeView.clipsToBounds = true
-        schemeView.delegate = self
-//        schemeView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(navigateToColorTable)))
         selectorController.delegate = self
         
         if let generator = self.appDelegate.colorSchemeGenerator {
@@ -43,14 +38,19 @@ class ColorComposeViewController: UIViewController {
         }
     }
     
+    func configureSchemeView() {
+        schemeView.animate = false
+        schemeView.layer.cornerRadius = 10.0
+        schemeView.layer.cornerCurve = .continuous
+        schemeView.clipsToBounds = true
+        schemeView.delegate = self
+//        schemeView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(navigateToColorTable)))
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        guard let generator = self.appDelegate.colorSchemeGenerator else {
-            return
-        }
-        
-        guard let schemes = generator.getSchemes(), let activedSchemeIndex = generator.getActivedSchemeIndex(), let activedColorIndex = generator.getActivedColorIndex() else {
+                
+        guard let generator = appDelegate.colorSchemeGenerator, let schemes = generator.getSchemes(), let activedSchemeIndex = generator.getActivedSchemeIndex(), let activedColorIndex = generator.getActivedColorIndex() else {
             return
         }
         
@@ -63,12 +63,12 @@ class ColorComposeViewController: UIViewController {
         infoLabel.text = ColorComposeTypeString(type: generator.getColorComposeType())
         
         NotificationCenter.default.addObserver(self, selector: #selector(updateSchemeNotificationResponder), name: ColorComposer.updateColorCombinationNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(activedColorIndexChangedNotificationResponder), name: ColorComposer.colorCombinationActivedColorIndexChangedNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(activedColorIndexChangedNotificationResponder), name: ColorComposer.activedColorIndexChangedNotification, object: nil)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        NotificationCenter.default.removeObserver(self, name: ColorComposer.colorCombinationActivedColorIndexChangedNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: ColorComposer.activedColorIndexChangedNotification, object: nil)
         NotificationCenter.default.removeObserver(self, name: ColorComposer.updateColorCombinationNotification, object: nil)
     }
     
@@ -329,7 +329,7 @@ class ColorComposeViewController: UIViewController {
         
         let items = [
             
-            UIAction(title: NSLocalizedString("SchemeTable-MenuItem", comment: ""), image: UIImage(named: "icon-list"), handler: { (_) in
+            UIAction(title: NSLocalizedString("SchemeList-MenuItem", comment: ""), image: UIImage(named: "icon-list"), handler: { (_) in
                 self.performSegue(withIdentifier: "IDSegueColorComposeSchemeTable", sender: self)
             }),
             
@@ -359,7 +359,7 @@ class ColorComposeViewController: UIViewController {
             }),
             
             UIAction(title: NSLocalizedString("Portrait-MenuItem", comment: ""), image: UIImage(named: "icon-portrait"), handler: { (_) in
-                self.performSegue(withIdentifier: "IDSegueColorWheelPortrait", sender: self)
+                self.performSegue(withIdentifier: "IDSegueColorCompositionPortrait", sender: self)
             }),
             
             UIAction(title: NSLocalizedString("EnterName-MenuItem", comment: ""), image: UIImage(named: "icon-edit-name"), handler: { (_) in
@@ -385,12 +385,9 @@ class ColorComposeViewController: UIViewController {
                     
                     self.present(dialog, animated: true)
                 }
-                                
+                
             }),
             
-//            UIAction(title: NSLocalizedString("Extension-MenuItem", comment: ""), image: UIImage(named: "icon-color-extension"), handler: { (_) in
-//                self.performSegue(withIdentifier: "IDSegueColorWheelExtension", sender: self)
-//            }),
         ]
         actionNavigationbarItem.menu = UIMenu(title: "", image: nil, identifier: nil, options: [], children: items)
     }

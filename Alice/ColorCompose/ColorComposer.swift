@@ -7,10 +7,10 @@
 
 import UIKit
 
-class ColorComposer: NSObject, ColorSchemeGenerator {
+class ColorComposer: ColorSchemeGenerator {
     
     static let updateColorCombinationNotification: Notification.Name = Notification.Name("updateColorCombinationNotification")
-    static let colorCombinationActivedColorIndexChangedNotification: Notification.Name = Notification.Name("colorCombinationActivedColorIndexChangedNotification")
+    static let activedColorIndexChangedNotification: Notification.Name = Notification.Name("activedColorIndexChangedNotification")
     
     private var composeType: ColorComposeType
     
@@ -27,9 +27,6 @@ class ColorComposer: NSObject, ColorSchemeGenerator {
     let splitComplementaryModel: SplitComplementaryModel? = SplitComplementaryModel()
     let customModel: CustomModel? = CustomModel()
     
-    var createDateTime: Date?
-    var name: String?
-    var uuid: UUID?
     
     init(hues: Array<CGFloat>, defaultComposeType: ColorComposeType) {
         self.hues = hues
@@ -40,7 +37,7 @@ class ColorComposer: NSObject, ColorSchemeGenerator {
         setColorComposeType(type: defaultComposeType)
     }
     
-    func setColorComposeType(type: ColorComposeType) {
+    override func setColorComposeType(type: ColorComposeType) {
         composeType = type
         
         let previousModel: ComposeModel? = currentModel
@@ -77,7 +74,7 @@ class ColorComposer: NSObject, ColorSchemeGenerator {
         }
     }
     
-    func set(selector: Int, hue: Int32?, saturation: Int32?, brightness: Int32?) {
+    override func set(selector: Int, hue: Int32?, saturation: Int32?, brightness: Int32?) {
         switch (composeType) {
         case .analogous:
             currentModel = analogousModel
@@ -103,44 +100,20 @@ class ColorComposer: NSObject, ColorSchemeGenerator {
         }
     }
     
-    func set(name: String?) {
-        if let trimmed = name?.trimmingCharacters(in: .whitespacesAndNewlines) {
-            self.name = trimmed
-        }
-    }
     
-    func getName() -> String {
-        if name == nil {
-            name = ""
-        }
-        return name!
-    }
-    
-    func getType() -> ColorSchemeGeneratorType {
+    override func getType() -> ColorSchemeGeneratorType {
         return .colorCompose
     }
     
-    func getId() -> UUID {
-        if uuid == nil {
-            uuid = UUID()
-        }
-        return uuid!
-    }
-    
-    func set(photo: UIImage) {
-    }
-    
-    func getPhoto() -> UIImage? {
-        return nil
-    }
-    
-    func getThumbnail() -> UIImage? {
+    override func getThumbnail() -> UIImage? {
         
         guard let scheme = currentModel?.scheme else {
             return nil
         }
-                
-        let size = CGSize(width: 512.0, height: 512.0)
+        
+        let width = 512.0
+        let height = 512.0
+        let size = CGSize(width: width, height: height)
         let rect = CGRect(origin: .zero, size: size)
         
         UIGraphicsBeginImageContextWithOptions(size, false, 1.0)
@@ -148,8 +121,7 @@ class ColorComposer: NSObject, ColorSchemeGenerator {
         let context = UIGraphicsGetCurrentContext()
         
         let path = UIBezierPath(rect: rect)
-            //        UIColor.white.setFill()
-        UIColor(hex: "#232323").setFill()
+        UIColor(named: "color-thumbnail-background")?.setFill()
         path.fill()
         
         let space = size.width / 10.0
@@ -224,25 +196,22 @@ class ColorComposer: NSObject, ColorSchemeGenerator {
         return number * .pi / 180
     }
     
-    func getSchemes() -> Array<ColorScheme>? {
+    override func getSchemes() -> Array<ColorScheme>? {
         if let scheme = currentModel?.scheme {
             return [scheme]
         }
         return nil
     }
     
-    func getActivedSchemeIndex() -> Int? {
+    override func getActivedSchemeIndex() -> Int? {
         return activedSchemeIndex
     }
-    
-    func setActivedSchemeIndex(_ index: Int) {
-    }
-    
-    func getActivedColorIndex() -> Int? {
+        
+    override func getActivedColorIndex() -> Int? {
         return activedColorIndex
     }
     
-    func setActivedColorIndex(_ index: Int) {
+    override func setActivedColorIndex(_ index: Int) {
         guard let scheme = currentModel?.scheme else {
             return
         }
@@ -252,15 +221,15 @@ class ColorComposer: NSObject, ColorSchemeGenerator {
         }
         
         activedColorIndex = index
-        NotificationCenter.default.post(name: ColorComposer.colorCombinationActivedColorIndexChangedNotification, object: self, userInfo: nil)
+        NotificationCenter.default.post(name: ColorComposer.activedColorIndexChangedNotification, object: self, userInfo: nil)
         
     }
     
-    func getExtensionSchemes() -> Array<ColorScheme>? {
+    override func getExtensionSchemes() -> Array<ColorScheme>? {
         return nil
     }
     
-    func snapshoot() -> Snapshoot? {
+    override func snapshoot() -> Snapshoot? {
         var createDateTime = createDateTime
         if createDateTime == nil {
             createDateTime = Date()
@@ -271,7 +240,7 @@ class ColorComposer: NSObject, ColorSchemeGenerator {
         return snapshoot
     }
     
-    func restore(by snapshoot: Snapshoot) {
+    override func restore(by snapshoot: Snapshoot) {
         uuid = snapshoot.uuid
         name = snapshoot.name
         createDateTime = snapshoot.createDateTime
@@ -283,17 +252,11 @@ class ColorComposer: NSObject, ColorSchemeGenerator {
         
     }
     
-    func clear() {
-        createDateTime = nil
-        uuid = nil
-        name = nil
-    }
-    
-    func getColorComposeType() -> ColorComposeType? {
+    override func getColorComposeType() -> ColorComposeType? {
         return composeType
     }
         
-    func getPortrait() -> PortraitView? {
+    override func getPortrait() -> PortraitView? {
         guard let scheme = currentModel?.scheme else {
             return nil
         }
@@ -417,38 +380,19 @@ class ColorComposer: NSObject, ColorSchemeGenerator {
         return portrait
     }
     
-    func getHues() -> Array<CGFloat>? {
+    override func getHues() -> Array<CGFloat>? {
         return hues
     }
-    
-    func updateScheme(colorCount: Int, frame: CGRect, index: Int) {
         
-    }
-    
-    func setScheme(frame: CGRect, index: Int) {
-        
-    }
-    
-    func setScheme(colorCount: Int, index: Int) {
-        
-    }
-    
-    func removeScheme(index: Int) {
-        
-    }
-    
-    func sample(colorCount: Int, frame: CGRect) {
-        
-    }
-    
-    func getPortraitScheme() -> ColorScheme? {
+    override func getPortraitScheme() -> ColorScheme? {
+        if let scheme = currentModel?.scheme {
+            return scheme
+        }
         return nil
     }
     
-    func getKeyColorIndex() -> Int? {
+    override func getKeyColorIndex() -> Int? {
         return ComposeModel.keyColorIndex
     }
     
-    func setKeyColorIndex(_ index: Int) {
-    }
 }

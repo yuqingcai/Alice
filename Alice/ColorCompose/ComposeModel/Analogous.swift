@@ -90,7 +90,7 @@ class AnalogousModel: ComposeModel {
             else if (selector == 4) {
                 hueDistance = ColorFunction.hueDistance(from: hue, to: keyHue, in: .antiClockwise)/2
             }
-                        
+            
             if (hueDistance <= miniHueDistance) {
                 hueDistance = miniHueDistance
             }

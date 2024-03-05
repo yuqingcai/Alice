@@ -82,7 +82,7 @@ class LocalLibraryViewController: UIViewController, UICollectionViewDataSource, 
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "IDLocalLibraryItemDetailViewCell", for: indexPath) as! LocalLibraryItemDetailViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "IDLocalLibraryItemViewCell", for: indexPath) as! LocalLibraryItemViewCell
         
         cell.layer.cornerRadius = 20.0
         cell.layer.cornerCurve = .continuous
@@ -129,12 +129,12 @@ class LocalLibraryViewController: UIViewController, UICollectionViewDataSource, 
                 if (snapshoot.type == .colorSample) {
                     colorSampler.restore(by: snapshoot);
                     self.appDelegate.colorSchemeGenerator = colorSampler
-                    self.performSegue(withIdentifier: "IDSegueColorSchemeFromPhoto", sender: self)
+                    self.performSegue(withIdentifier: "IDSegueColorSample", sender: self)
                 }
                 else if (snapshoot.type == .colorCompose) {
                     colorComposer.restore(by: snapshoot);
                     self.appDelegate.colorSchemeGenerator = colorComposer
-                    self.performSegue(withIdentifier: "IDSegueColorSchemeFromColorWheel", sender: self)
+                    self.performSegue(withIdentifier: "IDSegueColorComposer", sender: self)
                 }
             }
             
@@ -205,12 +205,12 @@ class LocalLibraryViewController: UIViewController, UICollectionViewDataSource, 
             if (snapshoot.type == .colorSample) {
                 colorSampler.restore(by: snapshoot);
                 appDelegate.colorSchemeGenerator = colorSampler
-                performSegue(withIdentifier: "IDSegueColorSchemeFromPhoto", sender: self)
+                performSegue(withIdentifier: "IDSegueColorSample", sender: self)
             }
             else if (snapshoot.type == .colorCompose) {
                 colorComposer.restore(by: snapshoot);
                 appDelegate.colorSchemeGenerator = colorComposer
-                performSegue(withIdentifier: "IDSegueColorSchemeFromColorWheel", sender: self)
+                performSegue(withIdentifier: "IDSegueColorComposer", sender: self)
             }
         }
     }

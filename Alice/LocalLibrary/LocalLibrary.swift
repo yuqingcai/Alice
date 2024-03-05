@@ -357,7 +357,7 @@ class LocalLibrary : NSObject {
         return snapshoot
     }
     
-    func thumbnail(by snapshoot:Snapshoot) -> UIImage? {
+    func thumbnail(by snapshoot: Snapshoot) -> UIImage? {
         if let thumbnailLoadPath = snapshoot.thumbnailSavePath {
             let thumbnail: UIImage? = UIImage(contentsOfFile:thumbnailLoadPath)
             return thumbnail
