@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="800px" viewBox="0 0 600 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>diagram0</title>
+    <g id="diagram0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M120,400 C120,499.411255 200.588745,580 300,580 C399.411255,580 480,499.411255 480,400 C480,300.588745 399.411255,220 300,220" id="路径" stroke="#FF3838" stroke-width="20" transform="translate(300.000000, 400.000000) rotate(-240.000000) translate(-300.000000, -400.000000) "></path>
+        <path d="M160,400 C160,477.319865 222.680135,540 300,540 C377.319865,540 440,477.319865 440,400 C440,322.680135 377.319865,260 300,260" id="路径" stroke="#FF535F" stroke-width="20" transform="translate(300.000000, 400.000000) rotate(-270.000000) translate(-300.000000, -400.000000) "></path>
+        <path d="M200,400 C200,455.228475 244.771525,500 300,500 C355.228475,500 400,455.228475 400,400 C400,344.771525 355.228475,300 300,300" id="路径" stroke="#FF9098" stroke-width="20" transform="translate(300.000000, 400.000000) rotate(-75.000000) translate(-300.000000, -400.000000) "></path>
+        <path d="M240,400 C240,433.137085 266.862915,460 300,460 C333.137085,460 360,433.137085 360,400 C360,366.862915 333.137085,340 300,340" id="路径" stroke="#FFC4C9" stroke-width="20"></path>
+        <text id="Diagram-0" font-family="DIN-BoldAlternate, DIN" font-size="21" font-weight="bold" letter-spacing="-0.901202716" fill="#FFFFFF">
+            <tspan x="255" y="651">Diagram 0</tspan>
+        </text>
+    </g>
+</svg>

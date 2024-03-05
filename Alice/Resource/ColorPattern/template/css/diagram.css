@@ -1,0 +1,31 @@
+html, body {
+    background-color: none;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'DIN Alternate','Helvetica Neue',Arial,sans-serif;
+    font-size: {{body-font-size}};
+    line-height: {{body-line-height}};
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px 16px; /* row-gap column gap */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+div.page {
+    margin: 0px;
+    padding: 0px;
+    color: {{page-text-color}};
+    background-color: {{page-background-color}};
+    border-radius: 10px;
+}
+
+img.diagram {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}

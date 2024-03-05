@@ -1,0 +1,53 @@
+/* 
+  Localizable.strings
+  Alice
+
+  Created by Yu Qing Cai on 2023/2/23.
+  
+*/
+
+"Photo-ButtonTitle"                     = "Foto";
+"Photo-ButtonSubtitle"                  = "Seleccionar colores de una foto";
+"ColorWheel-ButtonTitle"                = "Rueda de color";
+"ColorWheel-ButtonSubtitle"             = "Configurar esquemas desde la rueda de colores";
+"Library-ButtonTitle"                   = "Biblioteca";
+"Subscribe-MenuItem"                    = "Suscribir...";
+"Manual-MenuItem"                       = "Manual...";
+"About-MenuItem"                        = "Acerca de...";
+"Open-MenuItem"                         = "Abierto";
+"Delete-MenuItem"                       = "Borrar";
+"Sample-NavigationTitle"                = "Muestra";
+"SaveToLibrary-MenuItem"                = "Guardar en la biblioteca";
+"Portrait-MenuItem"                     = "Retrato...";
+"Colors-MenuItem"                       = "Colores...";
+"SaveToLibrary?-DialogMessage"          = "¿Guardar en la biblioteca?";
+"RemoveScheme?-DialogMessage"           = "¿Eliminar este Esquema?";
+"RemoveItem?-DialogMessage"             = "¿Eliminar este elemento?";
+"SaveComplete!-DialogMessage"           = "¡Guardar completo!";
+"OK-DialogButtonTitle"                  = "DE ACUERDO";
+"YES-DialogButtonTitle"                 = "SÍ";
+"NO-DialogButtonTitle"                  = "NO";
+"Movement-Label"                        = "Movimienot";
+"Scale-Label"                           = "Escala";
+"ColorsLevel-Label"                     = "Colores";
+"Horizontal:-Label"                     = "Horizontal:";
+"Vertical:-Label"                       = "Vertical:";
+"ColorNumber:-Label"                    = "Valor:";
+"Library-NavigationTitle"               = "Biblioteca";
+"Portrait-NavigationTitle"              = "Retrato";
+"Colors-NavigationTitle"                = "Colores";
+"CopiedtoClipard-Text"                  = "Copiado en Clipard";
+"CopytoClipboard-MenuItem"              = "Copiar al portapapeles";
+"CopytoClipboardComplete-DialogMessage" = "¡Copiado en Clipard!";
+"Scheme-MenuItem"                       = "Esquema...";
+"AdobeSwatchExchange-MenuItem"          = "Adobe Swatch Exchange";
+"ProcreateSwatches-MenuItem"            = "Procreate Swatches";
+"PlainText-MenuItem"                    = "Texto sin formato";
+"JSON-MenuItem"                         = "JSON";
+"Scheme-NavigationTitle"                = "Esquema";
+"ColorWheel-NavigationTitle"            = "Rueda de color";
+"Extension-NavigationItem"              = "Extensión";
+"Extension-MenuItem"                    = "Extensión...";
+"Subscribe-NavigationTitle"             = "Suscribir";
+"Manual-NavigationTitle"                = "Manual";
+"About-NavigationTitle"                 = "Acerca de";

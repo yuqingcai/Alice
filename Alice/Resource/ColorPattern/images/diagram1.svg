@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="800px" viewBox="0 0 600 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>diagram1</title>
+    <g id="diagram1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="c0" fill="#FFC4C9" x="134.447439" y="341.885445" width="17.8975741" height="84.1185984"></rect>
+        <rect id="c1" fill="#FF9098" x="179.191375" y="275.66442" width="17.8975741" height="205.822102"></rect>
+        <rect id="c2" fill="#FF535F" x="223.93531" y="341.885445" width="17.8975741" height="224.614555"></rect>
+        <rect id="c3" fill="#FF3838" x="268.679245" y="234.5" width="17.8975741" height="246.986523"></rect>
+        <rect id="c4" fill="#FF535F" x="313.423181" y="314.144205" width="17.8975741" height="127.967655"></rect>
+        <rect id="c5" fill="#FF9098" x="358.167116" y="286.402965" width="17.8975741" height="195.083558"></rect>
+        <rect id="c6" fill="#FFC4C9" x="402.911051" y="341.885445" width="17.8975741" height="84.1185984"></rect>
+        <rect id="c7" fill="#FFFFFF" x="447.654987" y="357.993261" width="17.8975741" height="42.9541779"></rect>
+        <text id="Diagram-1" font-family="DIN-BoldAlternate, DIN" font-size="21" font-weight="bold" letter-spacing="-0.901202716" fill="#FFFFFF">
+            <tspan x="256" y="651">Diagram 1</tspan>
+        </text>
+    </g>
+</svg>

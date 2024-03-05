@@ -1,0 +1,53 @@
+/* 
+  Localizable.strings
+  Alice
+
+  Created by Yu Qing Cai on 2023/2/23.
+  
+*/
+
+"Photo-ButtonTitle"                     = "Photo";
+"Photo-ButtonSubtitle"                  = "Reprendre les couleurs d\'une photo";
+"ColorWheel-ButtonTitle"                = "Palette de couleurs";
+"ColorWheel-ButtonSubtitle"             = "Schémas de configuration à partir de la roue chromatique";
+"Library-ButtonTitle"                   = "Bibliothèque";
+"Subscribe-MenuItem"                    = "S\'abonner...";
+"Manual-MenuItem"                       = "Manuel...";
+"About-MenuItem"                        = "À propos de...";
+"Open-MenuItem"                         = "Ouvrir";
+"Delete-MenuItem"                       = "Supprimer";
+"Sample-NavigationTitle"                = "Goûter";
+"SaveToLibrary-MenuItem"                = "Enregistrer dans la bibliothèque";
+"Portrait-MenuItem"                     = "Portrait...";
+"Colors-MenuItem"                       = "Couleurs...";
+"SaveToLibrary?-DialogMessage"          = "Enregistrer dans la bibliothèque ?";
+"RemoveScheme?-DialogMessage"           = "Supprimer ce schéma ?";
+"RemoveItem?-DialogMessage"             = "Enlever cet article?";
+"SaveComplete!-DialogMessage"           = "Enregistrer terminé !";
+"OK-DialogButtonTitle"                  = "D\'ACCORD";
+"YES-DialogButtonTitle"                 = "OUI";
+"NO-DialogButtonTitle"                  = "NON";
+"Movement-Label"                        = "Mouvement";
+"Scale-Label"                           = "Escalader";
+"ColorsLevel-Label"                     = "Couleurs";
+"Horizontal:-Label"                     = "Horizontal:";
+"Vertical:-Label"                       = "Vertical:";
+"ColorNumber:-Label"                    = "Valeur:";
+"Library-NavigationTitle"               = "Bibliothèque";
+"Portrait-NavigationTitle"              = "Portrait";
+"Colors-NavigationTitle"                = "Couleurs";
+"CopiedtoClipard-Text"                  = "Copié dans Clipard";
+"CopytoClipboard-MenuItem"              = "Copier dans le presse-papier";
+"CopytoClipboardComplete-DialogMessage" = "Copié dans Clipard!";
+"Scheme-MenuItem"                       = "Schème...";
+"AdobeSwatchExchange-MenuItem"          = "Adobe Swatch Exchange";
+"ProcreateSwatches-MenuItem"            = "Procreate Swatches";
+"PlainText-MenuItem"                    = "Texte brut";
+"JSON-MenuItem"                         = "JSON";
+"Scheme-NavigationTitle"                = "Schème";
+"ColorWheel-NavigationTitle"            = "Palette de couleurs";
+"Extension-NavigationItem"              = "Extension";
+"Extension-MenuItem"                    = "Extension...";
+"Subscribe-NavigationTitle"             = "S\'abonner";
+"Manual-NavigationTitle"                = "Manuel";
+"About-NavigationTitle"                 = "À propos de";

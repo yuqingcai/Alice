@@ -1,0 +1,53 @@
+/* 
+  Localizable.strings
+  Alice
+
+  Created by Yu Qing Cai on 2023/2/23.
+  
+*/
+
+"Photo-ButtonTitle"                     = "Fotoğraf";
+"Photo-ButtonSubtitle"                  = "Bir Fotoğraftan Renkleri Seçin";
+"ColorWheel-ButtonTitle"                = "Renk tekerleği";
+"ColorWheel-ButtonSubtitle"             = "Renk Çarkından Kurulum Şemaları";
+"Library-ButtonTitle"                   = "Kütüphane";
+"Subscribe-MenuItem"                    = "Abone...";
+"Manual-MenuItem"                       = "Manuel...";
+"About-MenuItem"                        = "Hakkında...";
+"Open-MenuItem"                         = "Açık";
+"Delete-MenuItem"                       = "Silmek";
+"Sample-NavigationTitle"                = "Örnek";
+"SaveToLibrary-MenuItem"                = "Kütüphaneye Kaydet";
+"Portrait-MenuItem"                     = "Vesika...";
+"Colors-MenuItem"                       = "Renkler...";
+"SaveToLibrary?-DialogMessage"          = "Kütüphaneye Kaydet?";
+"RemoveScheme?-DialogMessage"           = "Bu Şema Kaldırılsın mı?";
+"RemoveItem?-DialogMessage"             = "Bu öğeyi kaldır?";
+"SaveComplete!-DialogMessage"           = "Kaydet Tamamlandı!";
+"OK-DialogButtonTitle"                  = "TAMAM";
+"YES-DialogButtonTitle"                 = "EVET";
+"NO-DialogButtonTitle"                  = "HAYIR";
+"Movement-Label"                        = "Hareket";
+"Scale-Label"                           = "Ölçek";
+"ColorsLevel-Label"                     = "Renkler";
+"Horizontal:-Label"                     = "Yatay:";
+"Vertical:-Label"                       = "Dikey:";
+"ColorNumber:-Label"                    = "Değer:";
+"Library-NavigationTitle"               = "Kütüphane";
+"Portrait-NavigationTitle"              = "Vesika";
+"Colors-NavigationTitle"                = "Renkler";
+"CopiedtoClipard-Text"                  = "Clipard'a kopyalandı";
+"CopytoClipboard-MenuItem"              = "Panoya kopyala";
+"CopytoClipboardComplete-DialogMessage" = "Clipard'a kopyalandı!";
+"Scheme-MenuItem"                       = "Şema...";
+"AdobeSwatchExchange-MenuItem"          = "Adobe Swatch Exchange";
+"ProcreateSwatches-MenuItem"            = "Procreate Swatches";
+"PlainText-MenuItem"                    = "Düz Metin";
+"JSON-MenuItem"                         = "JSON";
+"Scheme-NavigationTitle"                = "Şema";
+"ColorWheel-NavigationTitle"            = "Renk tekerleği";
+"Extension-NavigationItem"              = "Eklenti";
+"Extension-MenuItem"                    = "Eklenti...";
+"Subscribe-NavigationTitle"             = "Abone";
+"Manual-NavigationTitle"                = "Manuel";
+"About-NavigationTitle"                 = "Hakkında";

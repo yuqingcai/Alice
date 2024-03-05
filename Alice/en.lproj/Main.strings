@@ -1,0 +1,141 @@
+
+/* Class = "UITabBarItem"; title = "Me"; ObjectID = "0CX-iA-3dB"; */
+"0CX-iA-3dB.title" = "Me";
+
+/* Class = "UIButton"; configuration.title = "Library"; ObjectID = "0gH-E0-uCj"; */
+"0gH-E0-uCj.configuration.title" = "Library";
+
+/* Class = "UIButton"; normalTitle = "Contrast"; ObjectID = "0gH-E0-uCj"; */
+"0gH-E0-uCj.normalTitle" = "Contrast";
+
+/* Class = "UITabBarItem"; title = "Explore"; ObjectID = "1C0-2a-X8J"; */
+"1C0-2a-X8J.title" = "Color Card";
+
+/* Class = "UINavigationItem"; title = "Portrait"; ObjectID = "214-NT-QTs"; */
+"214-NT-QTs.title" = "Portrait";
+
+/* Class = "UIBarButtonItem"; title = "Share"; ObjectID = "2zb-xi-wAW"; */
+"2zb-xi-wAW.title" = "Share";
+
+/* Class = "UINavigationItem"; title = "Colors"; ObjectID = "3zq-uv-cYm"; */
+"3zq-uv-cYm.title" = "Colors";
+
+/* Class = "UIBarButtonItem"; title = "Type"; ObjectID = "4aJ-VR-Aid"; */
+"4aJ-VR-Aid.title" = "Type";
+
+/* Class = "UILabel"; text = "水平"; ObjectID = "6R6-8w-Zxr"; */
+"6R6-8w-Zxr.text" = "水平";
+
+/* Class = "UIBarButtonItem"; title = "Action"; ObjectID = "6fu-RA-mL8"; */
+"6fu-RA-mL8.title" = "Action";
+
+/* Class = "UIButton"; configuration.subtitle = "Pick up Colors from a Photo"; ObjectID = "74l-oY-Y9M"; */
+"74l-oY-Y9M.configuration.subtitle" = "Pick up Colors from a Photo";
+
+/* Class = "UIButton"; configuration.title = "Picker"; ObjectID = "74l-oY-Y9M"; */
+"74l-oY-Y9M.configuration.title" = "Picker";
+
+/* Class = "UIButton"; normalTitle = "Picker"; ObjectID = "74l-oY-Y9M"; */
+"74l-oY-Y9M.normalTitle" = "Picker";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "7KK-FT-oVc"; */
+"7KK-FT-oVc.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "Done"; ObjectID = "951-mB-t0o"; */
+"951-mB-t0o.title" = "Done";
+
+/* Class = "UIButton"; configuration.subtitle = "Setup Schemes from Color Wheel"; ObjectID = "FmG-gS-fma"; */
+"FmG-gS-fma.configuration.subtitle" = "Setup Schemes from Color Wheel";
+
+/* Class = "UIButton"; configuration.title = "Color Wheel"; ObjectID = "FmG-gS-fma"; */
+"FmG-gS-fma.configuration.title" = "Color Wheel";
+
+/* Class = "UIButton"; normalTitle = "Scheme"; ObjectID = "FmG-gS-fma"; */
+"FmG-gS-fma.normalTitle" = "Scheme";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "Fs5-ED-iWm"; */
+"Fs5-ED-iWm.title" = "Item";
+
+/* Class = "UITabBarItem"; title = "Create"; ObjectID = "IdO-xi-XYp"; */
+"IdO-xi-XYp.title" = "Creation";
+
+/* Class = "UILabel"; text = "y:"; ObjectID = "KRz-4c-Gbs"; */
+"KRz-4c-Gbs.text" = "y:";
+
+/* Class = "UINavigationItem"; title = "Subscribe"; ObjectID = "Kix-Ml-c0Z"; */
+"Kix-Ml-c0Z.title" = "Subscribe";
+
+/* Class = "UIBarButtonItem"; title = "Done"; ObjectID = "MH5-YE-3k6"; */
+"MH5-YE-3k6.title" = "Done";
+
+/* Class = "UINavigationItem"; title = "Extension"; ObjectID = "Phk-0a-Dm7"; */
+"Phk-0a-Dm7.title" = "Extension";
+
+/* Class = "UIBarButtonItem"; title = "Done"; ObjectID = "Plp-3m-icg"; */
+"Plp-3m-icg.title" = "Done";
+
+/* Class = "UIBarButtonItem"; title = "Share"; ObjectID = "Pzu-dQ-Hs2"; */
+"Pzu-dQ-Hs2.title" = "Share";
+
+/* Class = "UINavigationItem"; title = "Library"; ObjectID = "QXW-dk-EnN"; */
+"QXW-dk-EnN.title" = "Library";
+
+/* Class = "UIViewController"; title = "Me"; ObjectID = "Smb-iQ-E9i"; */
+"Smb-iQ-E9i.title" = "Me";
+
+/* Class = "UIBarButtonItem"; title = "Action"; ObjectID = "WaM-JT-hin"; */
+"WaM-JT-hin.title" = "Action";
+
+/* Class = "UILabel"; text = "Copyright"; ObjectID = "X2x-kQ-E7h"; */
+"X2x-kQ-E7h.text" = "Copyright";
+
+/* Class = "UIBarButtonItem"; title = "Done"; ObjectID = "Xen-OT-M39"; */
+"Xen-OT-M39.title" = "Done";
+
+/* Class = "UILabel"; text = "x:"; ObjectID = "YHy-7t-4Zj"; */
+"YHy-7t-4Zj.text" = "x:";
+
+/* Class = "UIBarButtonItem"; title = "Done"; ObjectID = "cdn-ap-cBx"; */
+"cdn-ap-cBx.title" = "Done";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "czn-q8-dM7"; */
+"czn-q8-dM7.text" = "Label";
+
+/* Class = "UILabel"; text = "Version"; ObjectID = "dFk-8e-eD6"; */
+"dFk-8e-eD6.text" = "Version";
+
+/* Class = "UITabBarItem"; title = "Library"; ObjectID = "eth-9W-0DG"; */
+"eth-9W-0DG.title" = "Library";
+
+/* Class = "UINavigationItem"; title = "Coloury"; ObjectID = "g0V-zx-TIh"; */
+"g0V-zx-TIh.title" = "Creation";
+
+/* Class = "UINavigationItem"; title = "Manual"; ObjectID = "gCT-dC-feu"; */
+"gCT-dC-feu.title" = "Manual";
+
+/* Class = "UILabel"; text = "垂直"; ObjectID = "gOm-qp-1op"; */
+"gOm-qp-1op.text" = "垂直";
+
+/* Class = "UINavigationItem"; title = "Sample"; ObjectID = "gZt-dE-qiN"; */
+"gZt-dE-qiN.title" = "Sample";
+
+/* Class = "UINavigationItem"; title = "Scheme"; ObjectID = "jO2-OZ-QPa"; */
+"jO2-OZ-QPa.title" = "Scheme";
+
+/* Class = "UILabel"; text = "DisplayName"; ObjectID = "jRV-pF-LWC"; */
+"jRV-pF-LWC.text" = "DisplayName";
+
+/* Class = "UIBarButtonItem"; title = "Share"; ObjectID = "luO-Gl-abB"; */
+"luO-Gl-abB.title" = "Share";
+
+/* Class = "UIBarButtonItem"; title = "Close"; ObjectID = "mlM-or-TtB"; */
+"mlM-or-TtB.title" = "Close";
+
+/* Class = "UILabel"; text = "水平"; ObjectID = "vrO-Q3-4z4"; */
+"vrO-Q3-4z4.text" = "水平";
+
+/* Class = "UINavigationItem"; title = "Setup"; ObjectID = "yYv-gn-4ZS"; */
+"yYv-gn-4ZS.title" = "Setup";
+
+/* Class = "UINavigationItem"; title = "About"; ObjectID = "zfP-At-kxP"; */
+"zfP-At-kxP.title" = "About";

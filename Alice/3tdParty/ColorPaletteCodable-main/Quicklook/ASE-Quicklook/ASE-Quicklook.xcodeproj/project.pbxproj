@@ -1,0 +1,1018 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		232540B72909F3F900FC94C6 /* QuickLookThumbnailing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232540B62909F3F900FC94C6 /* QuickLookThumbnailing.framework */; };
+		232540B82909F3F900FC94C6 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A03DF728332AA2003846A4 /* Quartz.framework */; };
+		232540BB2909F3F900FC94C6 /* ThumbnailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232540BA2909F3F900FC94C6 /* ThumbnailProvider.swift */; };
+		232540C02909F3F900FC94C6 /* ASEGradientThumbnailGenerator.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 232540B52909F3F900FC94C6 /* ASEGradientThumbnailGenerator.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		232540C52909F41C00FC94C6 /* ColorPaletteCodable in Frameworks */ = {isa = PBXBuildFile; productRef = 232540C42909F41C00FC94C6 /* ColorPaletteCodable */; };
+		236DC937283B71CD0097B4DE /* ColorPaletteCodable in Frameworks */ = {isa = PBXBuildFile; productRef = 236DC936283B71CD0097B4DE /* ColorPaletteCodable */; };
+		236DC939283B71D60097B4DE /* ColorPaletteCodable in Frameworks */ = {isa = PBXBuildFile; productRef = 236DC938283B71D60097B4DE /* ColorPaletteCodable */; };
+		237EF04528398ABD000D6F42 /* PaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237EF04428398ABD000D6F42 /* PaletteView.swift */; };
+		237EF04628398ABD000D6F42 /* PaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237EF04428398ABD000D6F42 /* PaletteView.swift */; };
+		237EF04E28399BD9000D6F42 /* SwiftUIFlowLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 237EF04D28399BD9000D6F42 /* SwiftUIFlowLayout */; };
+		237EF05028399BE1000D6F42 /* SwiftUIFlowLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 237EF04F28399BE1000D6F42 /* SwiftUIFlowLayout */; };
+		237EF0872839B324000D6F42 /* UTType+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A03E0D28332AEB003846A4 /* UTType+extensions.swift */; };
+		23A03DF828332AA2003846A4 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A03DF728332AA2003846A4 /* Quartz.framework */; };
+		23A03DFB28332AA2003846A4 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A03DFA28332AA2003846A4 /* PreviewViewController.swift */; };
+		23A03DFD28332AA2003846A4 /* ASEPreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A03DFC28332AA2003846A4 /* ASEPreviewProvider.swift */; };
+		23A03E0028332AA2003846A4 /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A03DFE28332AA2003846A4 /* PreviewViewController.xib */; };
+		23A03E0E28332AEB003846A4 /* UTType+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A03E0D28332AEB003846A4 /* UTType+extensions.swift */; };
+		23A0FFE0290B520800E29FAE /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = 23A0FFDF290B520800E29FAE /* Defaults */; };
+		23A0FFE3290B61A700E29FAE /* GradientDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A0FFE1290B61A700E29FAE /* GradientDocument.swift */; };
+		23A0FFE4290B61A700E29FAE /* GradientDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A0FFE2290B61A700E29FAE /* GradientDocument.xib */; };
+		23A0FFE8290B692000E29FAE /* GradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A0FFE6290B692000E29FAE /* GradientViewController.swift */; };
+		23A0FFE9290B692000E29FAE /* GradientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A0FFE7290B692000E29FAE /* GradientViewController.xib */; };
+		23B20C122835D551005BD670 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B20C112835D551005BD670 /* AppDelegate.swift */; };
+		23B20C142835D551005BD670 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B20C132835D551005BD670 /* ViewController.swift */; };
+		23B20C162835D551005BD670 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B20C152835D551005BD670 /* Document.swift */; };
+		23B20C182835D552005BD670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23B20C172835D552005BD670 /* Assets.xcassets */; };
+		23B20C1B2835D552005BD670 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23B20C192835D552005BD670 /* Main.storyboard */; };
+		23B20C212835D613005BD670 /* ASEQuickLookPlugin.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 23A03DF528332AA2003846A4 /* ASEQuickLookPlugin.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		23EDD2772907A81D00B63B08 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A03DF728332AA2003846A4 /* Quartz.framework */; };
+		23EDD27A2907A81D00B63B08 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EDD2792907A81D00B63B08 /* PreviewViewController.swift */; };
+		23EDD27C2907A81D00B63B08 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EDD27B2907A81D00B63B08 /* PreviewProvider.swift */; };
+		23EDD27F2907A81D00B63B08 /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23EDD27D2907A81D00B63B08 /* PreviewViewController.xib */; };
+		23EDD2842907A81D00B63B08 /* ASEGradientQuicklookPlugin.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 23EDD2762907A81D00B63B08 /* ASEGradientQuicklookPlugin.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		23EDD2892907AB3E00B63B08 /* ColorPaletteCodable in Frameworks */ = {isa = PBXBuildFile; productRef = 23EDD2882907AB3E00B63B08 /* ColorPaletteCodable */; };
+		23F1FBA52907B8C200277016 /* CheckerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F1FBA42907B8C200277016 /* CheckerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		232540BE2909F3F900FC94C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23A03DD728332A83003846A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 232540B42909F3F900FC94C6;
+			remoteInfo = ASEGradientThumbnailGenerator;
+		};
+		23B20C222835D613005BD670 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23A03DD728332A83003846A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23A03DF428332AA2003846A4;
+			remoteInfo = ASEQuickLookPlugin;
+		};
+		23EDD2822907A81D00B63B08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23A03DD728332A83003846A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23EDD2752907A81D00B63B08;
+			remoteInfo = ASEGradientQuicklookPlugin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		23B20C242835D613005BD670 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				232540C02909F3F900FC94C6 /* ASEGradientThumbnailGenerator.appex in Embed Foundation Extensions */,
+				23EDD2842907A81D00B63B08 /* ASEGradientQuicklookPlugin.appex in Embed Foundation Extensions */,
+				23B20C212835D613005BD670 /* ASEQuickLookPlugin.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23B20C352835D6A2005BD670 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23B20C3A2835D6B6005BD670 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		232540B52909F3F900FC94C6 /* ASEGradientThumbnailGenerator.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ASEGradientThumbnailGenerator.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		232540B62909F3F900FC94C6 /* QuickLookThumbnailing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLookThumbnailing.framework; path = System/Library/Frameworks/QuickLookThumbnailing.framework; sourceTree = SDKROOT; };
+		232540BA2909F3F900FC94C6 /* ThumbnailProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailProvider.swift; sourceTree = "<group>"; };
+		232540BC2909F3F900FC94C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		232540BD2909F3F900FC94C6 /* ASEGradientThumbnailGenerator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ASEGradientThumbnailGenerator.entitlements; sourceTree = "<group>"; };
+		236DC935283B71BF0097B4DE /* ColorPaletteCodable */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ColorPaletteCodable; path = ../..; sourceTree = "<group>"; };
+		237EF04428398ABD000D6F42 /* PaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteView.swift; sourceTree = "<group>"; };
+		237EF08B2839BCA5000D6F42 /* Palette_Viewer.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Palette_Viewer.entitlements; sourceTree = "<group>"; };
+		23A03DF528332AA2003846A4 /* ASEQuickLookPlugin.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ASEQuickLookPlugin.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		23A03DF728332AA2003846A4 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		23A03DFA28332AA2003846A4 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		23A03DFC28332AA2003846A4 /* ASEPreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASEPreviewProvider.swift; sourceTree = "<group>"; };
+		23A03DFF28332AA2003846A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PreviewViewController.xib; sourceTree = "<group>"; };
+		23A03E0128332AA2003846A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23A03E0228332AA2003846A4 /* ASEQuickLookPlugin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ASEQuickLookPlugin.entitlements; sourceTree = "<group>"; };
+		23A03E0D28332AEB003846A4 /* UTType+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UTType+extensions.swift"; sourceTree = "<group>"; };
+		23A0FFE1290B61A700E29FAE /* GradientDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientDocument.swift; sourceTree = "<group>"; };
+		23A0FFE2290B61A700E29FAE /* GradientDocument.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GradientDocument.xib; sourceTree = "<group>"; };
+		23A0FFE6290B692000E29FAE /* GradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientViewController.swift; sourceTree = "<group>"; };
+		23A0FFE7290B692000E29FAE /* GradientViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GradientViewController.xib; sourceTree = "<group>"; };
+		23B20C0F2835D551005BD670 /* Palette Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Palette Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B20C112835D551005BD670 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23B20C132835D551005BD670 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23B20C152835D551005BD670 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		23B20C172835D552005BD670 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23B20C1A2835D552005BD670 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23B20C1C2835D552005BD670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23B20CCD2835E459005BD670 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		23EDD2762907A81D00B63B08 /* ASEGradientQuicklookPlugin.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ASEGradientQuicklookPlugin.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		23EDD2792907A81D00B63B08 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		23EDD27B2907A81D00B63B08 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		23EDD27E2907A81D00B63B08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PreviewViewController.xib; sourceTree = "<group>"; };
+		23EDD2802907A81D00B63B08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23EDD2812907A81D00B63B08 /* ASEGradientQuicklookPlugin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ASEGradientQuicklookPlugin.entitlements; sourceTree = "<group>"; };
+		23F1FBA42907B8C200277016 /* CheckerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckerView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		232540B22909F3F900FC94C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				232540C52909F41C00FC94C6 /* ColorPaletteCodable in Frameworks */,
+				232540B72909F3F900FC94C6 /* QuickLookThumbnailing.framework in Frameworks */,
+				232540B82909F3F900FC94C6 /* Quartz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A03DF228332AA2003846A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				236DC937283B71CD0097B4DE /* ColorPaletteCodable in Frameworks */,
+				23A03DF828332AA2003846A4 /* Quartz.framework in Frameworks */,
+				237EF05028399BE1000D6F42 /* SwiftUIFlowLayout in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23B20C0C2835D551005BD670 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				237EF04E28399BD9000D6F42 /* SwiftUIFlowLayout in Frameworks */,
+				236DC939283B71D60097B4DE /* ColorPaletteCodable in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23EDD2732907A81D00B63B08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A0FFE0290B520800E29FAE /* Defaults in Frameworks */,
+				23EDD2772907A81D00B63B08 /* Quartz.framework in Frameworks */,
+				23EDD2892907AB3E00B63B08 /* ColorPaletteCodable in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		232540B92909F3F900FC94C6 /* ASEGradientThumbnailGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				232540BA2909F3F900FC94C6 /* ThumbnailProvider.swift */,
+				232540BC2909F3F900FC94C6 /* Info.plist */,
+				232540BD2909F3F900FC94C6 /* ASEGradientThumbnailGenerator.entitlements */,
+			);
+			path = ASEGradientThumbnailGenerator;
+			sourceTree = "<group>";
+		};
+		23A03DD628332A83003846A4 = {
+			isa = PBXGroup;
+			children = (
+				236DC935283B71BF0097B4DE /* ColorPaletteCodable */,
+				23B20C102835D551005BD670 /* ASE Viewer */,
+				23A03DF928332AA2003846A4 /* ASEQuickLookPlugin */,
+				23FF72832839CA0500448D16 /* Shared */,
+				23EDD2782907A81D00B63B08 /* ASEGradientQuicklookPlugin */,
+				232540B92909F3F900FC94C6 /* ASEGradientThumbnailGenerator */,
+				23A03DF628332AA2003846A4 /* Frameworks */,
+				23A03DE028332A83003846A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23A03DE028332A83003846A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23A03DF528332AA2003846A4 /* ASEQuickLookPlugin.appex */,
+				23B20C0F2835D551005BD670 /* Palette Viewer.app */,
+				23EDD2762907A81D00B63B08 /* ASEGradientQuicklookPlugin.appex */,
+				232540B52909F3F900FC94C6 /* ASEGradientThumbnailGenerator.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23A03DF628332AA2003846A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23B20CCD2835E459005BD670 /* CoreGraphics.framework */,
+				23A03DF728332AA2003846A4 /* Quartz.framework */,
+				232540B62909F3F900FC94C6 /* QuickLookThumbnailing.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		23A03DF928332AA2003846A4 /* ASEQuickLookPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				23A03DFA28332AA2003846A4 /* PreviewViewController.swift */,
+				23A03DFE28332AA2003846A4 /* PreviewViewController.xib */,
+				23A03DFC28332AA2003846A4 /* ASEPreviewProvider.swift */,
+				23A03E0128332AA2003846A4 /* Info.plist */,
+				23A03E0228332AA2003846A4 /* ASEQuickLookPlugin.entitlements */,
+			);
+			path = ASEQuickLookPlugin;
+			sourceTree = "<group>";
+		};
+		23B20C102835D551005BD670 /* ASE Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				237EF08B2839BCA5000D6F42 /* Palette_Viewer.entitlements */,
+				23B20C112835D551005BD670 /* AppDelegate.swift */,
+				23B20C132835D551005BD670 /* ViewController.swift */,
+				23B20C152835D551005BD670 /* Document.swift */,
+				23B20C172835D552005BD670 /* Assets.xcassets */,
+				23B20C192835D552005BD670 /* Main.storyboard */,
+				23B20C1C2835D552005BD670 /* Info.plist */,
+				23A0FFE1290B61A700E29FAE /* GradientDocument.swift */,
+				23A0FFE2290B61A700E29FAE /* GradientDocument.xib */,
+				23A0FFE6290B692000E29FAE /* GradientViewController.swift */,
+				23A0FFE7290B692000E29FAE /* GradientViewController.xib */,
+			);
+			path = "ASE Viewer";
+			sourceTree = "<group>";
+		};
+		23EDD2782907A81D00B63B08 /* ASEGradientQuicklookPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				23F1FBA42907B8C200277016 /* CheckerView.swift */,
+				23EDD2792907A81D00B63B08 /* PreviewViewController.swift */,
+				23EDD27B2907A81D00B63B08 /* PreviewProvider.swift */,
+				23EDD27D2907A81D00B63B08 /* PreviewViewController.xib */,
+				23EDD2802907A81D00B63B08 /* Info.plist */,
+				23EDD2812907A81D00B63B08 /* ASEGradientQuicklookPlugin.entitlements */,
+			);
+			path = ASEGradientQuicklookPlugin;
+			sourceTree = "<group>";
+		};
+		23FF72832839CA0500448D16 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				23A03E0D28332AEB003846A4 /* UTType+extensions.swift */,
+				237EF04428398ABD000D6F42 /* PaletteView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		232540B42909F3F900FC94C6 /* ASEGradientThumbnailGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 232540C32909F3FA00FC94C6 /* Build configuration list for PBXNativeTarget "ASEGradientThumbnailGenerator" */;
+			buildPhases = (
+				232540B12909F3F900FC94C6 /* Sources */,
+				232540B22909F3F900FC94C6 /* Frameworks */,
+				232540B32909F3F900FC94C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ASEGradientThumbnailGenerator;
+			packageProductDependencies = (
+				232540C42909F41C00FC94C6 /* ColorPaletteCodable */,
+			);
+			productName = ASEGradientThumbnailGenerator;
+			productReference = 232540B52909F3F900FC94C6 /* ASEGradientThumbnailGenerator.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		23A03DF428332AA2003846A4 /* ASEQuickLookPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23A03E0628332AA2003846A4 /* Build configuration list for PBXNativeTarget "ASEQuickLookPlugin" */;
+			buildPhases = (
+				23A03DF128332AA2003846A4 /* Sources */,
+				23A03DF228332AA2003846A4 /* Frameworks */,
+				23A03DF328332AA2003846A4 /* Resources */,
+				23B20C3A2835D6B6005BD670 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ASEQuickLookPlugin;
+			packageProductDependencies = (
+				237EF04F28399BE1000D6F42 /* SwiftUIFlowLayout */,
+				236DC936283B71CD0097B4DE /* ColorPaletteCodable */,
+			);
+			productName = ASEQuickLookPlugin;
+			productReference = 23A03DF528332AA2003846A4 /* ASEQuickLookPlugin.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		23B20C0E2835D551005BD670 /* Palette Viewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23B20C1E2835D552005BD670 /* Build configuration list for PBXNativeTarget "Palette Viewer" */;
+			buildPhases = (
+				23B20C0B2835D551005BD670 /* Sources */,
+				23B20C0C2835D551005BD670 /* Frameworks */,
+				23B20C0D2835D551005BD670 /* Resources */,
+				23B20C242835D613005BD670 /* Embed Foundation Extensions */,
+				23B20C352835D6A2005BD670 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23B20C232835D613005BD670 /* PBXTargetDependency */,
+				23EDD2832907A81D00B63B08 /* PBXTargetDependency */,
+				232540BF2909F3F900FC94C6 /* PBXTargetDependency */,
+			);
+			name = "Palette Viewer";
+			packageProductDependencies = (
+				237EF04D28399BD9000D6F42 /* SwiftUIFlowLayout */,
+				236DC938283B71D60097B4DE /* ColorPaletteCodable */,
+			);
+			productName = "ASE Viewer";
+			productReference = 23B20C0F2835D551005BD670 /* Palette Viewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23EDD2752907A81D00B63B08 /* ASEGradientQuicklookPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23EDD2872907A81D00B63B08 /* Build configuration list for PBXNativeTarget "ASEGradientQuicklookPlugin" */;
+			buildPhases = (
+				23EDD2722907A81D00B63B08 /* Sources */,
+				23EDD2732907A81D00B63B08 /* Frameworks */,
+				23EDD2742907A81D00B63B08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ASEGradientQuicklookPlugin;
+			packageProductDependencies = (
+				23EDD2882907AB3E00B63B08 /* ColorPaletteCodable */,
+				23A0FFDF290B520800E29FAE /* Defaults */,
+			);
+			productName = ASEGradientQuicklookPlugin;
+			productReference = 23EDD2762907A81D00B63B08 /* ASEGradientQuicklookPlugin.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23A03DD728332A83003846A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					232540B42909F3F900FC94C6 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					23A03DF428332AA2003846A4 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					23B20C0E2835D551005BD670 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					23EDD2752907A81D00B63B08 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 23A03DDA28332A83003846A4 /* Build configuration list for PBXProject "ASE-Quicklook" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23A03DD628332A83003846A4;
+			packageReferences = (
+				237EF04C28399BD9000D6F42 /* XCRemoteSwiftPackageReference "swiftui-flow-layout" */,
+				23A0FFDC290B51BC00E29FAE /* XCRemoteSwiftPackageReference "Defaults" */,
+			);
+			productRefGroup = 23A03DE028332A83003846A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23A03DF428332AA2003846A4 /* ASEQuickLookPlugin */,
+				23EDD2752907A81D00B63B08 /* ASEGradientQuicklookPlugin */,
+				23B20C0E2835D551005BD670 /* Palette Viewer */,
+				232540B42909F3F900FC94C6 /* ASEGradientThumbnailGenerator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		232540B32909F3F900FC94C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A03DF328332AA2003846A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A03E0028332AA2003846A4 /* PreviewViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23B20C0D2835D551005BD670 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A0FFE9290B692000E29FAE /* GradientViewController.xib in Resources */,
+				23B20C182835D552005BD670 /* Assets.xcassets in Resources */,
+				23A0FFE4290B61A700E29FAE /* GradientDocument.xib in Resources */,
+				23B20C1B2835D552005BD670 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23EDD2742907A81D00B63B08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23EDD27F2907A81D00B63B08 /* PreviewViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		232540B12909F3F900FC94C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				232540BB2909F3F900FC94C6 /* ThumbnailProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A03DF128332AA2003846A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A03E0E28332AEB003846A4 /* UTType+extensions.swift in Sources */,
+				237EF04528398ABD000D6F42 /* PaletteView.swift in Sources */,
+				23A03DFB28332AA2003846A4 /* PreviewViewController.swift in Sources */,
+				23A03DFD28332AA2003846A4 /* ASEPreviewProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23B20C0B2835D551005BD670 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				237EF0872839B324000D6F42 /* UTType+extensions.swift in Sources */,
+				23B20C142835D551005BD670 /* ViewController.swift in Sources */,
+				23A0FFE3290B61A700E29FAE /* GradientDocument.swift in Sources */,
+				23A0FFE8290B692000E29FAE /* GradientViewController.swift in Sources */,
+				23B20C122835D551005BD670 /* AppDelegate.swift in Sources */,
+				23B20C162835D551005BD670 /* Document.swift in Sources */,
+				237EF04628398ABD000D6F42 /* PaletteView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23EDD2722907A81D00B63B08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F1FBA52907B8C200277016 /* CheckerView.swift in Sources */,
+				23EDD27A2907A81D00B63B08 /* PreviewViewController.swift in Sources */,
+				23EDD27C2907A81D00B63B08 /* PreviewProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		232540BF2909F3F900FC94C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 232540B42909F3F900FC94C6 /* ASEGradientThumbnailGenerator */;
+			targetProxy = 232540BE2909F3F900FC94C6 /* PBXContainerItemProxy */;
+		};
+		23B20C232835D613005BD670 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23A03DF428332AA2003846A4 /* ASEQuickLookPlugin */;
+			targetProxy = 23B20C222835D613005BD670 /* PBXContainerItemProxy */;
+		};
+		23EDD2832907A81D00B63B08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23EDD2752907A81D00B63B08 /* ASEGradientQuicklookPlugin */;
+			targetProxy = 23EDD2822907A81D00B63B08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		23A03DFE28332AA2003846A4 /* PreviewViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23A03DFF28332AA2003846A4 /* Base */,
+			);
+			name = PreviewViewController.xib;
+			sourceTree = "<group>";
+		};
+		23B20C192835D552005BD670 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23B20C1A2835D552005BD670 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		23EDD27D2907A81D00B63B08 /* PreviewViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23EDD27E2907A81D00B63B08 /* Base */,
+			);
+			name = PreviewViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		232540C12909F3FA00FC94C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = ASEGradientThumbnailGenerator/ASEGradientThumbnailGenerator.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3L6RK3LGGW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ASEGradientThumbnailGenerator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ASEGradientThumbnailGenerator;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Darren Ford. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.dagronf.asepalette.ASE-Viewer.ASEGradientThumbnailGenerator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		232540C22909F3FA00FC94C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = ASEGradientThumbnailGenerator/ASEGradientThumbnailGenerator.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3L6RK3LGGW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ASEGradientThumbnailGenerator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ASEGradientThumbnailGenerator;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Darren Ford. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.dagronf.asepalette.ASE-Viewer.ASEGradientThumbnailGenerator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		23A03DEC28332A85003846A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		23A03DED28332A85003846A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		23A03E0728332AA2003846A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ASEQuickLookPlugin/ASEQuickLookPlugin.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 3L6RK3LGGW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ASEQuickLookPlugin/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ASEQuickLookPlugin;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Darren Ford. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.dagronf.asepalette.ASE-Viewer.ASEQuickLookPlugin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		23A03E0828332AA2003846A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ASEQuickLookPlugin/ASEQuickLookPlugin.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 3L6RK3LGGW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ASEQuickLookPlugin/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ASEQuickLookPlugin;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Darren Ford. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.dagronf.asepalette.ASE-Viewer.ASEQuickLookPlugin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		23B20C1F2835D552005BD670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ASE Viewer/Palette_Viewer.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 3L6RK3LGGW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ASE Viewer/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Darren Ford. All rights reserved.";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.dagronf.asepalette.ASE-Viewer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		23B20C202835D552005BD670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ASE Viewer/Palette_Viewer.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 3L6RK3LGGW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ASE Viewer/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Darren Ford. All rights reserved.";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.dagronf.asepalette.ASE-Viewer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		23EDD2852907A81D00B63B08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = ASEGradientQuicklookPlugin/ASEGradientQuicklookPlugin.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 3L6RK3LGGW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ASEGradientQuicklookPlugin/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ASEGradientQuicklookPlugin;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Darren Ford. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.dagronf.asepalette.ASE-Viewer.ASEGradientQuicklookPlugin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		23EDD2862907A81D00B63B08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = ASEGradientQuicklookPlugin/ASEGradientQuicklookPlugin.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 3L6RK3LGGW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ASEGradientQuicklookPlugin/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ASEGradientQuicklookPlugin;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Darren Ford. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.dagronf.asepalette.ASE-Viewer.ASEGradientQuicklookPlugin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		232540C32909F3FA00FC94C6 /* Build configuration list for PBXNativeTarget "ASEGradientThumbnailGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				232540C12909F3FA00FC94C6 /* Debug */,
+				232540C22909F3FA00FC94C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23A03DDA28332A83003846A4 /* Build configuration list for PBXProject "ASE-Quicklook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23A03DEC28332A85003846A4 /* Debug */,
+				23A03DED28332A85003846A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23A03E0628332AA2003846A4 /* Build configuration list for PBXNativeTarget "ASEQuickLookPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23A03E0728332AA2003846A4 /* Debug */,
+				23A03E0828332AA2003846A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23B20C1E2835D552005BD670 /* Build configuration list for PBXNativeTarget "Palette Viewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23B20C1F2835D552005BD670 /* Debug */,
+				23B20C202835D552005BD670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23EDD2872907A81D00B63B08 /* Build configuration list for PBXNativeTarget "ASEGradientQuicklookPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23EDD2852907A81D00B63B08 /* Debug */,
+				23EDD2862907A81D00B63B08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		237EF04C28399BD9000D6F42 /* XCRemoteSwiftPackageReference "swiftui-flow-layout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/globulus/swiftui-flow-layout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		23A0FFDC290B51BC00E29FAE /* XCRemoteSwiftPackageReference "Defaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Defaults";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		232540C42909F41C00FC94C6 /* ColorPaletteCodable */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ColorPaletteCodable;
+		};
+		236DC936283B71CD0097B4DE /* ColorPaletteCodable */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ColorPaletteCodable;
+		};
+		236DC938283B71D60097B4DE /* ColorPaletteCodable */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ColorPaletteCodable;
+		};
+		237EF04D28399BD9000D6F42 /* SwiftUIFlowLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 237EF04C28399BD9000D6F42 /* XCRemoteSwiftPackageReference "swiftui-flow-layout" */;
+			productName = SwiftUIFlowLayout;
+		};
+		237EF04F28399BE1000D6F42 /* SwiftUIFlowLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 237EF04C28399BD9000D6F42 /* XCRemoteSwiftPackageReference "swiftui-flow-layout" */;
+			productName = SwiftUIFlowLayout;
+		};
+		23A0FFDF290B520800E29FAE /* Defaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23A0FFDC290B51BC00E29FAE /* XCRemoteSwiftPackageReference "Defaults" */;
+			productName = Defaults;
+		};
+		23EDD2882907AB3E00B63B08 /* ColorPaletteCodable */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ColorPaletteCodable;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 23A03DD728332A83003846A4 /* Project object */;
+}

@@ -1,0 +1,53 @@
+/* 
+  Localizable.strings
+  Alice
+
+  Created by Yu Qing Cai on 2023/2/23.
+  
+*/
+
+"Photo-ButtonTitle"                     = "写真";
+"Photo-ButtonSubtitle"                  = "写真から色を拾う";
+"ColorWheel-ButtonTitle"                = "カラーホイール";
+"ColorWheel-ButtonSubtitle"             = "カラー ホイールからのセットアップ スキーム";
+"Library-ButtonTitle"                   = "図書館";
+"Subscribe-MenuItem"                    = "購読...";
+"Manual-MenuItem"                       = "マニュアル...";
+"About-MenuItem"                        = "だいたい...";
+"Open-MenuItem"                         = "開ける";
+"Delete-MenuItem"                       = "消去";
+"Sample-NavigationTitle"                = "サンプル";
+"SaveToLibrary-MenuItem"                = "ライブラリに保存";
+"Portrait-MenuItem"                     = "ポートレート...";
+"Colors-MenuItem"                       = "色...";
+"SaveToLibrary?-DialogMessage"          = "ライブラリに保存しますか?";
+"RemoveScheme?-DialogMessage"           = "このスキームを削除しますか?";
+"RemoveItem?-DialogMessage"             = "このアイテムを削除しますか?";
+"SaveComplete!-DialogMessage"           = "保存完了!";
+"OK-DialogButtonTitle"                  = "OK";
+"YES-DialogButtonTitle"                 = "はい";
+"NO-DialogButtonTitle"                  = "いいえ";
+"Movement-Label"                        = "動き";
+"Scale-Label"                           = "規模";
+"ColorsLevel-Label"                     = "色";
+"Horizontal:-Label"                     = "水平:";
+"Vertical:-Label"                       = "垂直：";
+"ColorNumber:-Label"                    = "価値：";
+"Library-NavigationTitle"               = "図書館";
+"Portrait-NavigationTitle"              = "ポートレート";
+"Colors-NavigationTitle"                = "色";
+"CopiedtoClipard-Text"                  = "Clipard にコピー";
+"CopytoClipboard-MenuItem"              = "クリップボードにコピー";
+"CopytoClipboardComplete-DialogMessage" = "Clipard にコピーされました!";
+"Scheme-MenuItem"                       = "図式...";
+"AdobeSwatchExchange-MenuItem"          = "Adobe Swatch Exchange";
+"ProcreateSwatches-MenuItem"            = "Procreate Swatches";
+"PlainText-MenuItem"                    = "平文";
+"JSON-MenuItem"                         = "JSON";
+"Scheme-NavigationTitle"                = "図式";
+"ColorWheel-NavigationTitle"            = "カラーホイール";
+"Extension-NavigationItem"              = "拡大";
+"Extension-MenuItem"                    = "拡大...";
+"Subscribe-NavigationTitle"             = "購読";
+"Manual-NavigationTitle"                = "マニュアル";
+"About-NavigationTitle"                 = "だいたい";

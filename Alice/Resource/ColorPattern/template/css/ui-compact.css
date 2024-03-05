@@ -1,0 +1,27 @@
+@media only screen and (max-width: 430px) {
+    html, body {
+        background-color: none;
+        color: black;
+        margin: 0px;
+        padding: 0px;
+        font-family: 'DIN Alternate','Helvetica Neue',Arial,sans-serif;
+        font-size: {{body-font-size}};
+        line-height: {{body-line-height}};
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px 10px; /* row-gap column gap */
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+    }
+
+    div.page {
+        margin: 0px 0px 16px 0px;
+        padding: 0px;
+        color: {{page-text-color}};
+        background-color: {{page-background-color}};
+        border-radius: 10px;
+    }
+
+}

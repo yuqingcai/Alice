@@ -1,0 +1,53 @@
+/* 
+  Localizable.strings
+  Alice
+
+  Created by Yu Qing Cai on 2023/2/23.
+  
+*/
+
+"Photo-ButtonTitle"                     = "사진";
+"Photo-ButtonSubtitle"                  = "사진에서 색상 선택";
+"ColorWheel-ButtonTitle"                = "컬러 휠";
+"ColorWheel-ButtonSubtitle"             = "색상환에서 구성표 설정";
+"Library-ButtonTitle"                   = "도서관";
+"Subscribe-MenuItem"                    = "구독하다...";
+"Manual-MenuItem"                       = "수동...";
+"About-MenuItem"                        = "에 대한...";
+"Open-MenuItem"                         = "열려 있는";
+"Delete-MenuItem"                       = "삭제";
+"Sample-NavigationTitle"                = "견본";
+"SaveToLibrary-MenuItem"                = "라이브러리에 저장";
+"Portrait-MenuItem"                     = "초상화...";
+"Colors-MenuItem"                       = "그림 물감...";
+"SaveToLibrary?-DialogMessage"          = "라이브러리에 저장하시겠습니까?";
+"RemoveScheme?-DialogMessage"           = "이 체계를 제거하시겠습니까?";
+"RemoveItem?-DialogMessage"             = "이 항목을 제거하시겠습니까?";
+"SaveComplete!-DialogMessage"           = "저장 완료!";
+"OK-DialogButtonTitle"                  = "좋아요";
+"YES-DialogButtonTitle"                 = "예";
+"NO-DialogButtonTitle"                  = "아니요";
+"Movement-Label"                        = "움직임";
+"Scale-Label"                           = "규모";
+"ColorsLevel-Label"                     = "그림 물감";
+"Horizontal:-Label"                     = "수평의:";
+"Vertical:-Label"                       = "수직의:";
+"ColorNumber:-Label"                    = "값:";
+"Library-NavigationTitle"               = "도서관";
+"Portrait-NavigationTitle"              = "초상화";
+"Colors-NavigationTitle"                = "그림 물감";
+"CopiedtoClipard-Text"                  = "Clipard에 복사됨";
+"CopytoClipboard-MenuItem"              = "클립 보드에 복사";
+"CopytoClipboardComplete-DialogMessage" = "Clipard에 복사되었습니다!";
+"Scheme-MenuItem"                       = "계획...";
+"AdobeSwatchExchange-MenuItem"          = "Adobe Swatch Exchange";
+"ProcreateSwatches-MenuItem"            = "Procreate Swatches";
+"PlainText-MenuItem"                    = "일반 텍스트";
+"JSON-MenuItem"                         = "JSON";
+"Scheme-NavigationTitle"                = "계획";
+"ColorWheel-NavigationTitle"            = "컬러 휠";
+"Extension-NavigationItem"              = "확대";
+"Extension-MenuItem"                    = "확대...";
+"Subscribe-NavigationTitle"             = "구독하다";
+"Manual-NavigationTitle"                = "수동";
+"About-NavigationTitle"                 = "에 대한";
