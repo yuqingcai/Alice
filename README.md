@@ -1,5 +1,9 @@
 # Coloury (Project named Alice)
 
+Coloury is software that helps you to manage color patterns in your digital artwork. I started this project (project named "Alice") in 2023 using Apple Swift language under Xcode. Coloury has become an open-source project helping you learn about or understand color compositing ([like Adobe Kuler](https://color.adobe.com/zh/create/color-wheel).) and sampling. I hope you enjoy it.
+
+
+## Indroduction
 Coloury is a color management and creation software, and you may sample colors from an image or set up color compositions from a color wheel. The generated color scheme can be shared or exported to designing or painting software you are familiar with（Such as Procreate or PhotoShop）. You may apply the colors to your artwork, such as poster design, digital painting, or rich text document writing.
 
 <img src="https://github.com/yuqingcai/Alice/blob/main/Alice/Resource/Prompt/prompt-startup.png" width="300">
