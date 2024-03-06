@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FKH-9P-qIt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FKH-9P-qIt">
     <device id="retina5_9" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -2108,9 +2108,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Qiw-fu-bkH"/>
+        <segue reference="wlb-NF-PjT"/>
         <segue reference="hsZ-bD-1vJ"/>
-        <segue reference="bHo-Kh-UR2"/>
+        <segue reference="WPd-gL-8af"/>
         <segue reference="bzj-T4-sUr"/>
         <segue reference="oEt-w9-zCA"/>
         <segue reference="nR0-qZ-MkW"/>
@@ -2135,7 +2135,7 @@
         <image name="icon-views" width="32" height="32"/>
         <image name="illustration-coloury" width="250" height="250"/>
         <image name="illustration-offline-dinosaur" width="250" height="250"/>
-        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="square.and.arrow.up" catalog="system" width="108" height="128"/>
         <image name="trash" catalog="system" width="117" height="128"/>
         <namedColor name="color-button-background">
             <color red="0.23529411764705882" green="0.22745098039215686" blue="0.23921568627450981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2168,7 +2168,7 @@
             <color red="0.082352941176470587" green="0.070588235294117646" blue="0.082352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
